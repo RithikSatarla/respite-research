@@ -1,0 +1,68 @@
+<section class="hero">
+  <p class="eyebrow">Method</p>
+  <h1>How the benchmark was built</h1>
+  <p class="lede">The design was written down and hashed before any model was trained or any test result existed. Every change after that is listed as an amendment in the protocol.</p>
+</section>
+
+<div class="prose">
+<h2 id="data">Data</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Set</th><th>What it is</th><th class="n">Segments</th><th class="n">Episodes</th><th>Role</th></tr></thead>
+<tbody>
+<tr><td>Development</td><td>One robotics team's YAM recordings (two stations, named Station A and Station B; the team is not named). The recorder logs a real clock, per-camera capture times and frame ages on every row.</td><td class="n">{{ data.dev.segments | int }}</td><td class="n">{{ data.dev.episodes | int }}</td><td>Training, model selection, thresholds. Respite's existing rules were tuned on this data, so it is never used as test data.</td></tr>
+<tr><td>External test</td><td>A sample of XDOF ABC-130k (Apache-2.0, gated download): another company, another recorder, MCAP files at 30 Hz. No station field, so each recording stream is a proxy station.</td><td class="n">{{ data.test.segments | int }}</td><td class="n">{{ data.test.episodes | int }}</td><td>Scored once, after models and thresholds were frozen.</td></tr>
+</tbody>
+<caption>Episodes are sorted by recording start within each station and cut into 20-episode segments. A segment is the unit of analysis: detectors start fresh on it and confidence intervals resample segments, never rows or frames.</caption>
+</table></div>
+
+<h2 id="labels">Why the faults are synthetic</h2>
+<p>None of these recordings comes with independent, human-checked labels of station faults. The development set's per-row <code>training_valid</code> flag is written by its own recorder; it is a useful reference but not ground truth. Respite's own earlier findings on this data are Respite's measurements, so scoring Respite against them would be circular.</p>
+<p>So every detection number comes from faults written into real recordings, where the fault, its start and the affected episodes are known by construction. Development faults are applied in memory; test faults are written into copies of the MCAP files, so every tool reads the same bytes.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Fault</th><th>What changes in the recording</th><th>Range (fixed in advance)</th></tr></thead>
+<tbody>
+<tr><td>Camera frames</td><td>One camera delivers fewer new frames (held frames, or fewer camera messages)</td><td>35% to 85% of frames kept</td></tr>
+<tr><td>Recorder rate</td><td>The recorder logs fewer rows than it claims</td><td>50% to 95% of its rate</td></tr>
+<tr><td>Recorder pause</td><td>The recorder stops logging inside an episode</td><td>1 to 3 pauses of 0.3 to 3.0 s</td></tr>
+<tr><td>Command-to-motion delay</td><td>The measured joints trail their commands by more</td><td>40 to 200 ms extra</td></tr>
+<tr><td>Camera clock drift</td><td>One camera's clock drifts against the recorder's</td><td>0.1 to 0.6 s by episode end</td></tr>
+<tr><td>Missing stream</td><td>A camera stream or the whole action stream is absent</td><td>camera or action</td></tr>
+</tbody>
+<caption>Each 20-episode segment gets one control trial and one trial per fault, all starting at the same episode (drawn between the 11th and 14th). Three in ten trials are intermittent: each later episode is hit with probability 0.6.</caption>
+</table></div>
+
+<h2 id="detectors">Detectors</h2>
+<ul>
+<li><strong>Respite rules (shipped).</strong> <code>respite live</code>'s station rules, unchanged: per-station status from the last five episodes, with a recorder rule (rows a second against the declared rate), a camera rule (new frames against rows, stale rows), a delay rule against the station's first episodes, and a motion rule. A problem must persist over three counted episodes before a warning.</li>
+<li><strong>Rules, one episode at a time.</strong> The same thresholds without the cross-episode logic. An ablation of Respite's own design.</li>
+<li><strong>Robust z baseline.</strong> Each measurement against the median and spread of the segment's first eight episodes; an alert when the median score of the last three episodes passes a threshold. No training.</li>
+<li><strong>Trained model.</strong> A per-episode classifier (no fault, or one of six categories) on the measurements, their change from the segment's first eight episodes, and missing-value flags. The recorder's own validity flag and episode length are not inputs. Station score: mean fault probability of the last three episodes.</li>
+<li><strong>HFlow 0.2.22</strong> (Hebbian Robotics, open source). See the benchmark page: it could only be compared episode by episode.</li>
+</ul>
+
+<h2 id="training">Training</h2>
+<p>Two model families were tried, logistic regression (C in 0.1, 1, 10) and histogram gradient-boosted trees (depth 3 or unlimited, 100 or 300 iterations), with 4-fold cross-validation grouped by station and week of recording. The configuration with the highest out-of-fold station-level recall at the matched alert rate won. One model was trained per development draw: three draws of the synthetic faults, each with its own random seed.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Draw (seed)</th><th>Selected</th><th class="n">Out-of-fold recall</th><th class="n">Threshold</th><th class="n">Training episodes</th><th class="n">Fit time (s)</th><th class="n">Peak Python memory (MB)</th></tr></thead>
+<tbody>
+<tr><td>101</td><td>{{ training.draws.101.selected_text }}</td><td class="n">{{ training.draws.101.oof_recall | f3 }}</td><td class="n">{{ training.draws.101.threshold | f2 }}</td><td class="n">{{ training.draws.101.train_episodes | int }}</td><td class="n">{{ training.draws.101.fit_seconds | f1 }}</td><td class="n">{{ training.draws.101.peak_python_alloc_mb | f1 }}</td></tr>
+<tr><td>202</td><td>{{ training.draws.202.selected_text }}</td><td class="n">{{ training.draws.202.oof_recall | f3 }}</td><td class="n">{{ training.draws.202.threshold | f2 }}</td><td class="n">{{ training.draws.202.train_episodes | int }}</td><td class="n">{{ training.draws.202.fit_seconds | f1 }}</td><td class="n">{{ training.draws.202.peak_python_alloc_mb | f1 }}</td></tr>
+<tr><td>303</td><td>{{ training.draws.303.selected_text }}</td><td class="n">{{ training.draws.303.oof_recall | f3 }}</td><td class="n">{{ training.draws.303.threshold | f2 }}</td><td class="n">{{ training.draws.303.train_episodes | int }}</td><td class="n">{{ training.draws.303.fit_seconds | f1 }}</td><td class="n">{{ training.draws.303.peak_python_alloc_mb | f1 }}</td></tr>
+</tbody>
+<caption>Hardware: {{ training.hardware }} ({{ training.processor }}). Python {{ meta.python }}, scikit-learn {{ meta.sklearn }}. Out-of-fold recall is on development data and is not a test result.</caption>
+</table></div>
+
+<h2 id="thresholds">Thresholds</h2>
+<p>The robust z threshold and each model's threshold were set on the development set so that their rate of alerts on unmodified recordings matched the shipped rules' rate there, {{ training.target_alerts_per_100h | f0 }} alert events per 100 station-hours. That rate is high because the development stations carry real problems the rules flag. The thresholds were then frozen with SHA-256 hashes before the test set was scored.</p>
+
+<h2 id="scoring">Scoring</h2>
+<ul>
+<li><strong>Detected:</strong> the detector raises an alert event (off to on, or a change of category) at or after the first faulty episode. If it was already alerting at the start and raises nothing new, the fault counts as missed and is listed as masked.</li>
+<li><strong>Delay:</strong> recording minutes from the start of the first faulty episode to the end of the episode after which the alert came.</li>
+<li><strong>Alerts on unmodified recordings:</strong> alert events on control trials per 100 station-hours. Real recordings can hold real faults, so these are not called false positives.</li>
+<li><strong>Category:</strong> whether the alert names the right subsystem (camera, recorder, timing, missing stream).</li>
+<li><strong>Attribution:</strong> each faulty segment is paired with a healthy segment recorded "at the same time"; correct when the first alert is on the faulty one and the healthy one stays quiet.</li>
+<li><strong>Uncertainty:</strong> 95% bootstrap intervals over segments (2,000 resamples); differences between detectors are paired on the same resamples.</li>
+</ul>
+<p>The decision rule was fixed in advance: a detector is called better than the shipped rules only if the paired interval of its recall minus the rules' recall is above zero and its alert rate on unmodified recordings is not higher.</p>
+</div>

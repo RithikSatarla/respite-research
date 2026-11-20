@@ -1,0 +1,9 @@
+{
+  "index": {"title": "Respite: Detecting Recording-Station Failures in Robot Training Data", "description": "A frozen benchmark of station-fault detection for robot training data: Respite's rules, a robust statistical baseline and a trained model on an unseen recorder, with HFlow compared on the same files."},
+  "benchmark": {"title": "Benchmark | Respite research", "description": "Detection, alert rates, delay, diagnosis and attribution on an external XDOF test set with synthetic station faults, with 95% intervals."},
+  "demo": {"title": "Interactive demo | Respite research", "description": "Replay stored benchmark records: twenty real episodes from one recording stream, healthy or with a synthetic fault, and what each detector said."},
+  "method": {"title": "Method | Respite research", "description": "Datasets, split, synthetic faults, detectors, training, thresholds and scoring for the Respite station-failure benchmark."},
+  "reproduce": {"title": "Reproduce | Respite research", "description": "Published result files and hashes, commands, data sources and environment for the Respite station-failure benchmark."},
+  "limitations": {"title": "Limitations | Respite research", "description": "What the Respite station-failure benchmark does and does not show."},
+  "report": {"title": "Technical report | Respite research", "description": "Respite: Detecting Recording-Station Failures in Robot Training Data. Full technical report."}
+}

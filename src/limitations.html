@@ -1,0 +1,36 @@
+<section class="hero">
+  <p class="eyebrow">Limitations</p>
+  <h1>What this evidence does not show</h1>
+  <p class="lede">Read this page before quoting any number from the benchmark.</p>
+</section>
+
+<div class="prose">
+<h2>Synthetic faults, real recordings</h2>
+<p>Every detection number comes from faults we wrote into real recordings. They test whether a detector notices a specific, known change. They do not show how often real stations fail, which failures matter most, or how a detector does on failures we did not think to simulate. Strong results on synthetic faults are not production accuracy.</p>
+
+<h2>No independent labels</h2>
+<p>None of the datasets here carries independent, human-checked labels of station faults. The development set's <code>training_valid</code> flag is written by that team's own recorder. Respite's earlier findings on these datasets were made by Respite's own checks. The real-data replay on the benchmark page is therefore descriptive: it says where each detector raised alerts, not whether those alerts were right.</p>
+
+<h2>The development set shaped the rules</h2>
+<p>Respite's shipped rules were tuned on the development set, and the model was trained on faults injected into it. Development numbers are reference only. The external test set (XDOF) was not used to tune any threshold, but Respite's MCAP reader and delay estimator were built and checked on it earlier.</p>
+
+<h2>Small and narrow</h2>
+<ul>
+<li>The test set has {{ data.test.segments | int }} segments ({{ data.test.episodes | int }} episodes) from one company's recordings. Each fault type is tested on {{ data.test.segments | int }} trials; intervals are wide.</li>
+<li>Both datasets use bimanual YAM-style arms. Behaviour on other robots, other recorders and other file formats is unknown.</li>
+<li>The test set has no physical station field. Its "stations" are recording streams that mix operators and days.</li>
+<li>The XDOF format logs camera message times but not capture times or frame ages, so frozen or repeated camera frames cannot be measured there by any detector here.</li>
+</ul>
+
+<h2>Retrospective, not live</h2>
+<p>All of this ran on stored files in recording order. Nothing here was a live deployment. The operator workflow (alert, acknowledge, record a fix, recheck) exists as software and is tested on synthetic batches; it has not been used by a station operator, so no claim is made about time saved or data recovered.</p>
+
+<h2>Software checks are not a safety check</h2>
+<p>When Respite's checks pass, the recorder, cameras and arms logged in step on the episodes checked. That does not show the station is safe, calibrated, or that the data will train a good policy.</p>
+
+<h2>HFlow comparison</h2>
+<p>HFlow ships measurements without default pass/fail rules for timing, so the comparison applies its documented cohort z-score pattern and its own fps and topic classifications. HFlow needs the video payload, which most of our stored test files do not carry, so it was compared on 30 full-video episodes, episode by episode, not on station sequences. A different configuration of HFlow, written by someone who knows it well, could do better.</p>
+
+<h2>No customer results</h2>
+<p>There are no customer savings, accepted-data rates or production figures on this site because none have been measured.</p>
+</div>

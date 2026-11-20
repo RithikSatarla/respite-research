@@ -1,0 +1,4051 @@
+{
+ "source": "stored test-set records: segment xdof:Proxy 3:004 of experiments/splits/split_v1.json, features in experiments/results/features/test_9001.jsonl.gz",
+ "scenarios": [
+  {
+   "id": "control",
+   "label": "Healthy (no fault)",
+   "kind": "evaluation record",
+   "fault": "control",
+   "onset": null,
+   "description": "Twenty consecutive real XDOF episodes from one recording stream, stored without changes.",
+   "steps": [
+    {
+     "index": 0,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9978491162729038,
+      "max_gap_s": 0.046712576000000894,
+      "cam_rate_ratio_min": 0.9997491829249635,
+      "cam_offset_max_s": 0.11798118399999424,
+      "delay_ms": 147.0,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 1,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9981053564880902,
+      "max_gap_s": 0.08605952000000006,
+      "cam_rate_ratio_min": 0.999733830864881,
+      "cam_offset_max_s": 0.119115776000001,
+      "delay_ms": 136.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 2,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9988786987279641,
+      "max_gap_s": 0.03843532799999849,
+      "cam_rate_ratio_min": 0.9997491829249902,
+      "cam_offset_max_s": 0.11416192000000001,
+      "delay_ms": 174.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 3,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9976579779435782,
+      "max_gap_s": 0.03743615999999861,
+      "cam_rate_ratio_min": 0.9997415068360256,
+      "cam_offset_max_s": 0.11166259199999828,
+      "delay_ms": 169.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 4,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9985646232679438,
+      "max_gap_s": 0.04041600000000045,
+      "cam_rate_ratio_min": 0.9997491829249635,
+      "cam_offset_max_s": 0.11300198400000001,
+      "delay_ms": 136.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 5,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9981436125835426,
+      "max_gap_s": 0.04787839999999832,
+      "cam_rate_ratio_min": 0.9997491829249635,
+      "cam_offset_max_s": 0.12119989600000025,
+      "delay_ms": 139.0,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 6,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9971995445750218,
+      "max_gap_s": 0.0659120640000026,
+      "cam_rate_ratio_min": 0.9997415068359723,
+      "cam_offset_max_s": 0.120902912,
+      "delay_ms": 153.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 7,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9954765545360792,
+      "max_gap_s": 0.03862451199999839,
+      "cam_rate_ratio_min": 0.9997491829249635,
+      "cam_offset_max_s": 0.11623731200000001,
+      "delay_ms": 156.0,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 8,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9985531364473802,
+      "max_gap_s": 0.05828864000000067,
+      "cam_rate_ratio_min": 0.9997722118992045,
+      "cam_offset_max_s": 0.11027200000000001,
+      "delay_ms": 166.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 9,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9974134277062342,
+      "max_gap_s": 0.05874278400000321,
+      "cam_rate_ratio_min": 0.9997722118992411,
+      "cam_offset_max_s": 0.12092364800000001,
+      "delay_ms": 157.0,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 10,
+     "affected": false,
+     "m": {
+      "rec_ratio": 1.0011020130960264,
+      "max_gap_s": 0.03375180799999811,
+      "cam_rate_ratio_min": 0.9997568591318308,
+      "cam_offset_max_s": 0.141200640000001,
+      "delay_ms": 164.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 11,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9987829230813088,
+      "max_gap_s": 0.05157427199999631,
+      "cam_rate_ratio_min": 0.9997415068359723,
+      "cam_offset_max_s": 0.12804326400000002,
+      "delay_ms": 150.0,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 12,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9979179440016177,
+      "max_gap_s": 0.061903872000002025,
+      "cam_rate_ratio_min": 0.9997491829249635,
+      "cam_offset_max_s": 0.10752947200000307,
+      "delay_ms": 148.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 13,
+     "affected": false,
+     "m": {
+      "rec_ratio": 1.0010712262978099,
+      "max_gap_s": 0.03386470400000263,
+      "cam_rate_ratio_min": 0.999764535456577,
+      "cam_offset_max_s": 0.11562752000000001,
+      "delay_ms": 164.0,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 14,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9980479778428236,
+      "max_gap_s": 0.05973990399999707,
+      "cam_rate_ratio_min": 0.9997491829249635,
+      "cam_offset_max_s": 0.11307852800000001,
+      "delay_ms": 148.0,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 15,
+     "affected": false,
+     "m": {
+      "rec_ratio": 1.0009865723656879,
+      "max_gap_s": 0.06705433599999822,
+      "cam_rate_ratio_min": 0.9997491829249902,
+      "cam_offset_max_s": 0.12843340799999226,
+      "delay_ms": 178.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 16,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9990051507106579,
+      "max_gap_s": 0.06757273599998825,
+      "cam_rate_ratio_min": 0.9997491829249902,
+      "cam_offset_max_s": 0.121046784,
+      "delay_ms": 134.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 17,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9986450384119077,
+      "max_gap_s": 0.05195673599999928,
+      "cam_rate_ratio_min": 0.9997568591318308,
+      "cam_offset_max_s": 0.12025856000000346,
+      "delay_ms": 161.0,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 18,
+     "affected": false,
+     "m": {
+      "rec_ratio": 1.0010789228198809,
+      "max_gap_s": 0.06985574400000161,
+      "cam_rate_ratio_min": 0.9997568591318308,
+      "cam_offset_max_s": 0.130525952,
+      "delay_ms": 183.0,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 19,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9981397868420303,
+      "max_gap_s": 0.0927444479999977,
+      "cam_rate_ratio_min": 0.9997645354566835,
+      "cam_offset_max_s": 0.133393664,
+      "delay_ms": 156.0,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    }
+   ],
+   "detectors": {
+    "rules": [
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     }
+    ],
+    "robust_z": [
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     }
+    ],
+    "model": [
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "recorder_rate",
+   "label": "Recorder slows down",
+   "kind": "evaluation record",
+   "fault": "recorder_rate",
+   "onset": 10,
+   "description": "The same twenty real XDOF episodes; from episode 11 a synthetic 'recorder_rate' fault was written into the recordings (parameters {\"rate_fraction\": 0.6314650405606365}).",
+   "steps": [
+    {
+     "index": 0,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9978491162729038,
+      "max_gap_s": 0.046712576000000894,
+      "cam_rate_ratio_min": 0.9997491829249635,
+      "cam_offset_max_s": 0.11798118399999424,
+      "delay_ms": 147.0,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 1,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9981053564880902,
+      "max_gap_s": 0.08605952000000006,
+      "cam_rate_ratio_min": 0.999733830864881,
+      "cam_offset_max_s": 0.119115776000001,
+      "delay_ms": 136.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 2,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9988786987279641,
+      "max_gap_s": 0.03843532799999849,
+      "cam_rate_ratio_min": 0.9997491829249902,
+      "cam_offset_max_s": 0.11416192000000001,
+      "delay_ms": 174.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 3,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9976579779435782,
+      "max_gap_s": 0.03743615999999861,
+      "cam_rate_ratio_min": 0.9997415068360256,
+      "cam_offset_max_s": 0.11166259199999828,
+      "delay_ms": 169.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 4,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9985646232679438,
+      "max_gap_s": 0.04041600000000045,
+      "cam_rate_ratio_min": 0.9997491829249635,
+      "cam_offset_max_s": 0.11300198400000001,
+      "delay_ms": 136.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 5,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9981436125835426,
+      "max_gap_s": 0.04787839999999832,
+      "cam_rate_ratio_min": 0.9997491829249635,
+      "cam_offset_max_s": 0.12119989600000025,
+      "delay_ms": 139.0,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 6,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9971995445750218,
+      "max_gap_s": 0.0659120640000026,
+      "cam_rate_ratio_min": 0.9997415068359723,
+      "cam_offset_max_s": 0.120902912,
+      "delay_ms": 153.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 7,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9954765545360792,
+      "max_gap_s": 0.03862451199999839,
+      "cam_rate_ratio_min": 0.9997491829249635,
+      "cam_offset_max_s": 0.11623731200000001,
+      "delay_ms": 156.0,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 8,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9985531364473802,
+      "max_gap_s": 0.05828864000000067,
+      "cam_rate_ratio_min": 0.9997722118992045,
+      "cam_offset_max_s": 0.11027200000000001,
+      "delay_ms": 166.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 9,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9974134277062342,
+      "max_gap_s": 0.05874278400000321,
+      "cam_rate_ratio_min": 0.9997722118992411,
+      "cam_offset_max_s": 0.12092364800000001,
+      "delay_ms": 157.0,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 10,
+     "affected": true,
+     "m": {
+      "rec_ratio": 0.5007107689507689,
+      "max_gap_s": 0.06703923199999906,
+      "cam_rate_ratio_min": 0.9997568591318308,
+      "cam_offset_max_s": 0.15858944,
+      "delay_ms": 164.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 11,
+     "affected": true,
+     "m": {
+      "rec_ratio": 0.5003855771102835,
+      "max_gap_s": 0.08498124799999829,
+      "cam_rate_ratio_min": 0.9997415068359723,
+      "cam_offset_max_s": 0.15934156800000002,
+      "delay_ms": 148.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 12,
+     "affected": true,
+     "m": {
+      "rec_ratio": 0.5002663818430053,
+      "max_gap_s": 0.09519718399999988,
+      "cam_rate_ratio_min": 0.9997491829249635,
+      "cam_offset_max_s": 0.10752947200000307,
+      "delay_ms": 147.0,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 13,
+     "affected": true,
+     "m": {
+      "rec_ratio": 0.5007107689507155,
+      "max_gap_s": 0.0671498240000048,
+      "cam_rate_ratio_min": 0.999764535456577,
+      "cam_offset_max_s": 0.11562752000000001,
+      "delay_ms": 163.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 14,
+     "affected": true,
+     "m": {
+      "rec_ratio": 0.5001971977432429,
+      "max_gap_s": 0.09302886400000432,
+      "cam_rate_ratio_min": 0.9997491829249635,
+      "cam_offset_max_s": 0.143844352,
+      "delay_ms": 147.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 15,
+     "affected": true,
+     "m": {
+      "rec_ratio": 0.5006915150652181,
+      "max_gap_s": 0.10043110400000188,
+      "cam_rate_ratio_min": 0.9997491829249902,
+      "cam_offset_max_s": 0.153745664,
+      "delay_ms": 179.0,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 16,
+     "affected": true,
+     "m": {
+      "rec_ratio": 0.5003855771102835,
+      "max_gap_s": 0.07359334399999984,
+      "cam_rate_ratio_min": 0.9997491829249902,
+      "cam_offset_max_s": 0.121046784,
+      "delay_ms": 134.0,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 17,
+     "affected": true,
+     "m": {
+      "rec_ratio": 0.5002702259652502,
+      "max_gap_s": 0.08524595199999929,
+      "cam_rate_ratio_min": 0.9997568591318308,
+      "cam_offset_max_s": 0.14556211200000002,
+      "delay_ms": 161.0,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 18,
+     "affected": true,
+     "m": {
+      "rec_ratio": 0.5007049926296402,
+      "max_gap_s": 0.10315955200000104,
+      "cam_rate_ratio_min": 0.9997568591318308,
+      "cam_offset_max_s": 0.130525952,
+      "delay_ms": 183.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 19,
+     "affected": true,
+     "m": {
+      "rec_ratio": 0.5002308265125929,
+      "max_gap_s": 0.12678860799999825,
+      "cam_rate_ratio_min": 0.9997645354566835,
+      "cam_offset_max_s": 0.133393664,
+      "delay_ms": 155.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    }
+   ],
+   "detectors": {
+    "rules": [
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": true,
+      "category": "recorder",
+      "why": "recorder logging 15.0 rows a second, should be 30, in 3 of the last 5 episodes. Check the recorder before recording more."
+     },
+     {
+      "alert": true,
+      "category": "recorder",
+      "why": "recorder logging 15.0 rows a second, should be 30, in 4 of the last 5 episodes. Check the recorder before recording more."
+     },
+     {
+      "alert": true,
+      "category": "recorder",
+      "why": "recorder logging 15.0 rows a second, should be 30, in 5 of the last 5 episodes. Check the recorder before recording more."
+     },
+     {
+      "alert": true,
+      "category": "recorder",
+      "why": "recorder logging 15.0 rows a second, should be 30, in 5 of the last 5 episodes. Check the recorder before recording more."
+     },
+     {
+      "alert": true,
+      "category": "recorder",
+      "why": "recorder logging 15.0 rows a second, should be 30, in 5 of the last 5 episodes. Check the recorder before recording more."
+     },
+     {
+      "alert": true,
+      "category": "recorder",
+      "why": "recorder logging 15.0 rows a second, should be 30, in 5 of the last 5 episodes. Check the recorder before recording more."
+     },
+     {
+      "alert": true,
+      "category": "recorder",
+      "why": "recorder logging 15.0 rows a second, should be 30, in 5 of the last 5 episodes. Check the recorder before recording more."
+     },
+     {
+      "alert": true,
+      "category": "recorder",
+      "why": "recorder logging 15.0 rows a second, should be 30, in 5 of the last 5 episodes. Check the recorder before recording more."
+     }
+    ],
+    "robust_z": [
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": true,
+      "category": "recorder",
+      "why": "largest change: rec_ratio (z 49.73)"
+     },
+     {
+      "alert": true,
+      "category": "recorder",
+      "why": "largest change: rec_ratio (z 49.76)"
+     },
+     {
+      "alert": true,
+      "category": "recorder",
+      "why": "largest change: rec_ratio (z 49.76)"
+     },
+     {
+      "alert": true,
+      "category": "recorder",
+      "why": "largest change: rec_ratio (z 49.77)"
+     },
+     {
+      "alert": true,
+      "category": "recorder",
+      "why": "largest change: rec_ratio (z 49.73)"
+     },
+     {
+      "alert": true,
+      "category": "recorder",
+      "why": "largest change: rec_ratio (z 49.76)"
+     },
+     {
+      "alert": true,
+      "category": "recorder",
+      "why": "largest change: rec_ratio (z 49.76)"
+     },
+     {
+      "alert": true,
+      "category": "recorder",
+      "why": "largest change: rec_ratio (z 49.76)"
+     },
+     {
+      "alert": true,
+      "category": "recorder",
+      "why": "largest change: rec_ratio (z 49.77)"
+     }
+    ],
+    "model": [
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "recorder_pause",
+   "label": "Recorder pauses",
+   "kind": "evaluation record",
+   "fault": "recorder_pause",
+   "onset": 10,
+   "description": "The same twenty real XDOF episodes; from episode 11 a synthetic 'recorder_pause' fault was written into the recordings (parameters {\"pauses\": 2, \"pause_s\": [0.3, 3.0]}, intermittent).",
+   "steps": [
+    {
+     "index": 0,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9978491162729038,
+      "max_gap_s": 0.046712576000000894,
+      "cam_rate_ratio_min": 0.9997491829249635,
+      "cam_offset_max_s": 0.11798118399999424,
+      "delay_ms": 147.0,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 1,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9981053564880902,
+      "max_gap_s": 0.08605952000000006,
+      "cam_rate_ratio_min": 0.999733830864881,
+      "cam_offset_max_s": 0.119115776000001,
+      "delay_ms": 136.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 2,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9988786987279641,
+      "max_gap_s": 0.03843532799999849,
+      "cam_rate_ratio_min": 0.9997491829249902,
+      "cam_offset_max_s": 0.11416192000000001,
+      "delay_ms": 174.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 3,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9976579779435782,
+      "max_gap_s": 0.03743615999999861,
+      "cam_rate_ratio_min": 0.9997415068360256,
+      "cam_offset_max_s": 0.11166259199999828,
+      "delay_ms": 169.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 4,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9985646232679438,
+      "max_gap_s": 0.04041600000000045,
+      "cam_rate_ratio_min": 0.9997491829249635,
+      "cam_offset_max_s": 0.11300198400000001,
+      "delay_ms": 136.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 5,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9981436125835426,
+      "max_gap_s": 0.04787839999999832,
+      "cam_rate_ratio_min": 0.9997491829249635,
+      "cam_offset_max_s": 0.12119989600000025,
+      "delay_ms": 139.0,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 6,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9971995445750218,
+      "max_gap_s": 0.0659120640000026,
+      "cam_rate_ratio_min": 0.9997415068359723,
+      "cam_offset_max_s": 0.120902912,
+      "delay_ms": 153.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 7,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9954765545360792,
+      "max_gap_s": 0.03862451199999839,
+      "cam_rate_ratio_min": 0.9997491829249635,
+      "cam_offset_max_s": 0.11623731200000001,
+      "delay_ms": 156.0,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 8,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9985531364473802,
+      "max_gap_s": 0.05828864000000067,
+      "cam_rate_ratio_min": 0.9997722118992045,
+      "cam_offset_max_s": 0.11027200000000001,
+      "delay_ms": 166.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 9,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9974134277062342,
+      "max_gap_s": 0.05874278400000321,
+      "cam_rate_ratio_min": 0.9997722118992411,
+      "cam_offset_max_s": 0.12092364800000001,
+      "delay_ms": 157.0,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 10,
+     "affected": false,
+     "m": {
+      "rec_ratio": 1.0011020130960264,
+      "max_gap_s": 0.03375180799999811,
+      "cam_rate_ratio_min": 0.9997568591318308,
+      "cam_offset_max_s": 0.141200640000001,
+      "delay_ms": 164.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 11,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9987829230813088,
+      "max_gap_s": 0.05157427199999631,
+      "cam_rate_ratio_min": 0.9997415068359723,
+      "cam_offset_max_s": 0.12804326400000002,
+      "delay_ms": 150.0,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 12,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9979179440016177,
+      "max_gap_s": 0.061903872000002025,
+      "cam_rate_ratio_min": 0.9997491829249635,
+      "cam_offset_max_s": 0.10752947200000307,
+      "delay_ms": 148.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 13,
+     "affected": false,
+     "m": {
+      "rec_ratio": 1.0010712262978099,
+      "max_gap_s": 0.03386470400000263,
+      "cam_rate_ratio_min": 0.999764535456577,
+      "cam_offset_max_s": 0.11562752000000001,
+      "delay_ms": 164.0,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 14,
+     "affected": true,
+     "m": {
+      "rec_ratio": 0.9980441528344364,
+      "max_gap_s": 1.4596328810000045,
+      "cam_rate_ratio_min": 0.9997491829249635,
+      "cam_offset_max_s": 0.11307852800000001,
+      "delay_ms": 148.0,
+      "n_cams": 3,
+      "gaps_per_min": 1.278915808174933
+     }
+    },
+    {
+     "index": 15,
+     "affected": true,
+     "m": {
+      "rec_ratio": 1.0009865723656879,
+      "max_gap_s": 2.5973813660000005,
+      "cam_rate_ratio_min": 0.9997491829249902,
+      "cam_offset_max_s": 0.12843340800000647,
+      "delay_ms": 179.0,
+      "n_cams": 3,
+      "gaps_per_min": 1.4813072642026288
+     }
+    },
+    {
+     "index": 16,
+     "affected": true,
+     "m": {
+      "rec_ratio": 0.9990051507106579,
+      "max_gap_s": 1.426254452000002,
+      "cam_rate_ratio_min": 0.9997491829249902,
+      "cam_offset_max_s": 0.121046784,
+      "delay_ms": 134.5,
+      "n_cams": 3,
+      "gaps_per_min": 1.2345560084974339
+     }
+    },
+    {
+     "index": 17,
+     "affected": true,
+     "m": {
+      "rec_ratio": 0.9986297202430776,
+      "max_gap_s": 1.1827290709999971,
+      "cam_rate_ratio_min": 0.9997568591318308,
+      "cam_offset_max_s": 0.12025856000000346,
+      "delay_ms": 161.0,
+      "n_cams": 3,
+      "gaps_per_min": 2.7142346243410858
+     }
+    },
+    {
+     "index": 18,
+     "affected": false,
+     "m": {
+      "rec_ratio": 1.0010789228198809,
+      "max_gap_s": 0.06985574400000161,
+      "cam_rate_ratio_min": 0.9997568591318308,
+      "cam_offset_max_s": 0.130525952,
+      "delay_ms": 183.0,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 19,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9981397868420303,
+      "max_gap_s": 0.0927444479999977,
+      "cam_rate_ratio_min": 0.9997645354566835,
+      "cam_offset_max_s": 0.133393664,
+      "delay_ms": 156.0,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    }
+   ],
+   "detectors": {
+    "rules": [
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     }
+    ],
+    "robust_z": [
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": true,
+      "category": "recorder",
+      "why": "largest change: max_gap_s (z 28.32)"
+     },
+     {
+      "alert": true,
+      "category": "recorder",
+      "why": "largest change: max_gap_s (z 28.32)"
+     },
+     {
+      "alert": true,
+      "category": "recorder",
+      "why": "largest change: max_gap_s (z 27.65)"
+     },
+     {
+      "alert": true,
+      "category": "recorder",
+      "why": "largest change: max_gap_s (z 22.78)"
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     }
+    ],
+    "model": [
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "timing_delay",
+   "label": "Arms lag commands",
+   "kind": "evaluation record",
+   "fault": "timing_delay",
+   "onset": 10,
+   "description": "The same twenty real XDOF episodes; from episode 11 a synthetic 'timing_delay' fault was written into the recordings (parameters {\"delay_ms\": 142.57544792586197}).",
+   "steps": [
+    {
+     "index": 0,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9978491162729038,
+      "max_gap_s": 0.046712576000000894,
+      "cam_rate_ratio_min": 0.9997491829249635,
+      "cam_offset_max_s": 0.11798118399999424,
+      "delay_ms": 147.0,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 1,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9981053564880902,
+      "max_gap_s": 0.08605952000000006,
+      "cam_rate_ratio_min": 0.999733830864881,
+      "cam_offset_max_s": 0.119115776000001,
+      "delay_ms": 136.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 2,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9988786987279641,
+      "max_gap_s": 0.03843532799999849,
+      "cam_rate_ratio_min": 0.9997491829249902,
+      "cam_offset_max_s": 0.11416192000000001,
+      "delay_ms": 174.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 3,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9976579779435782,
+      "max_gap_s": 0.03743615999999861,
+      "cam_rate_ratio_min": 0.9997415068360256,
+      "cam_offset_max_s": 0.11166259199999828,
+      "delay_ms": 169.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 4,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9985646232679438,
+      "max_gap_s": 0.04041600000000045,
+      "cam_rate_ratio_min": 0.9997491829249635,
+      "cam_offset_max_s": 0.11300198400000001,
+      "delay_ms": 136.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 5,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9981436125835426,
+      "max_gap_s": 0.04787839999999832,
+      "cam_rate_ratio_min": 0.9997491829249635,
+      "cam_offset_max_s": 0.12119989600000025,
+      "delay_ms": 139.0,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 6,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9971995445750218,
+      "max_gap_s": 0.0659120640000026,
+      "cam_rate_ratio_min": 0.9997415068359723,
+      "cam_offset_max_s": 0.120902912,
+      "delay_ms": 153.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 7,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9954765545360792,
+      "max_gap_s": 0.03862451199999839,
+      "cam_rate_ratio_min": 0.9997491829249635,
+      "cam_offset_max_s": 0.11623731200000001,
+      "delay_ms": 156.0,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 8,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9985531364473802,
+      "max_gap_s": 0.05828864000000067,
+      "cam_rate_ratio_min": 0.9997722118992045,
+      "cam_offset_max_s": 0.11027200000000001,
+      "delay_ms": 166.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 9,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9974134277062342,
+      "max_gap_s": 0.05874278400000321,
+      "cam_rate_ratio_min": 0.9997722118992411,
+      "cam_offset_max_s": 0.12092364800000001,
+      "delay_ms": 157.0,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 10,
+     "affected": true,
+     "m": {
+      "rec_ratio": 1.0011020130960264,
+      "max_gap_s": 0.03375180799999811,
+      "cam_rate_ratio_min": 0.9997568591318308,
+      "cam_offset_max_s": 0.2837760869999997,
+      "delay_ms": 307.0,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 11,
+     "affected": true,
+     "m": {
+      "rec_ratio": 0.9987829230813088,
+      "max_gap_s": 0.05157427199999631,
+      "cam_rate_ratio_min": 0.9997415068359723,
+      "cam_offset_max_s": 0.270618711,
+      "delay_ms": 292.0,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 12,
+     "affected": true,
+     "m": {
+      "rec_ratio": 0.9979179440016177,
+      "max_gap_s": 0.061903872000002025,
+      "cam_rate_ratio_min": 0.9997491829249635,
+      "cam_offset_max_s": 0.25010491900000176,
+      "delay_ms": 290.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 13,
+     "affected": true,
+     "m": {
+      "rec_ratio": 1.0010712262978099,
+      "max_gap_s": 0.03386470400000263,
+      "cam_rate_ratio_min": 0.999764535456577,
+      "cam_offset_max_s": 0.258202967,
+      "delay_ms": 306.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 14,
+     "affected": true,
+     "m": {
+      "rec_ratio": 0.9980479778428236,
+      "max_gap_s": 0.05973990399999707,
+      "cam_rate_ratio_min": 0.9997491829249635,
+      "cam_offset_max_s": 0.25565397500000003,
+      "delay_ms": 291.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 15,
+     "affected": true,
+     "m": {
+      "rec_ratio": 1.0009865723656879,
+      "max_gap_s": 0.06705433599999822,
+      "cam_rate_ratio_min": 0.9997491829249902,
+      "cam_offset_max_s": 0.27100885499999094,
+      "delay_ms": 321.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 16,
+     "affected": true,
+     "m": {
+      "rec_ratio": 0.9990051507106579,
+      "max_gap_s": 0.06757273599998825,
+      "cam_rate_ratio_min": 0.9997491829249902,
+      "cam_offset_max_s": 0.26362223100000004,
+      "delay_ms": 277.0,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 17,
+     "affected": true,
+     "m": {
+      "rec_ratio": 0.9986450384119077,
+      "max_gap_s": 0.05195673599999928,
+      "cam_rate_ratio_min": 0.9997568591318308,
+      "cam_offset_max_s": 0.26283400700000215,
+      "delay_ms": 304.0,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 18,
+     "affected": true,
+     "m": {
+      "rec_ratio": 1.0010789228198809,
+      "max_gap_s": 0.06985574400000161,
+      "cam_rate_ratio_min": 0.9997568591318308,
+      "cam_offset_max_s": 0.273101399,
+      "delay_ms": 325.0,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 19,
+     "affected": true,
+     "m": {
+      "rec_ratio": 0.9981397868420303,
+      "max_gap_s": 0.0927444479999977,
+      "cam_rate_ratio_min": 0.9997645354566302,
+      "cam_offset_max_s": 0.27596911100000004,
+      "delay_ms": 298.0,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    }
+   ],
+   "detectors": {
+    "rules": [
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": true,
+      "category": "timing",
+      "why": "arms trail their commands by 290 ms, 136 ms more than this station's first episodes. Check the control path."
+     },
+     {
+      "alert": true,
+      "category": "timing",
+      "why": "arms trail their commands by 292 ms, 137 ms more than this station's first episodes. Check the control path."
+     },
+     {
+      "alert": true,
+      "category": "timing",
+      "why": "arms trail their commands by 292 ms, 137 ms more than this station's first episodes. Check the control path."
+     },
+     {
+      "alert": true,
+      "category": "timing",
+      "why": "arms trail their commands by 292 ms, 137 ms more than this station's first episodes. Check the control path."
+     },
+     {
+      "alert": true,
+      "category": "timing",
+      "why": "arms trail their commands by 292 ms, 137 ms more than this station's first episodes. Check the control path."
+     },
+     {
+      "alert": true,
+      "category": "timing",
+      "why": "arms trail their commands by 304 ms, 149 ms more than this station's first episodes. Check the control path."
+     },
+     {
+      "alert": true,
+      "category": "timing",
+      "why": "arms trail their commands by 304 ms, 149 ms more than this station's first episodes. Check the control path."
+     },
+     {
+      "alert": true,
+      "category": "timing",
+      "why": "arms trail their commands by 304 ms, 149 ms more than this station's first episodes. Check the control path."
+     }
+    ],
+    "robust_z": [
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": true,
+      "category": "sync",
+      "why": "largest change: cam_offset_max_s (z 7.68)"
+     },
+     {
+      "alert": true,
+      "category": "sync",
+      "why": "largest change: cam_offset_max_s (z 7.68)"
+     },
+     {
+      "alert": true,
+      "category": "timing",
+      "why": "largest change: delay_ms (z 7.65)"
+     },
+     {
+      "alert": true,
+      "category": "timing",
+      "why": "largest change: delay_ms (z 7.62)"
+     },
+     {
+      "alert": true,
+      "category": "timing",
+      "why": "largest change: delay_ms (z 8.43)"
+     },
+     {
+      "alert": true,
+      "category": "timing",
+      "why": "largest change: delay_ms (z 7.62)"
+     },
+     {
+      "alert": true,
+      "category": "timing",
+      "why": "largest change: delay_ms (z 8.3)"
+     },
+     {
+      "alert": true,
+      "category": "timing",
+      "why": "largest change: delay_ms (z 8.3)"
+     },
+     {
+      "alert": true,
+      "category": "timing",
+      "why": "largest change: delay_ms (z 8.3)"
+     }
+    ],
+    "model": [
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "sync_drift",
+   "label": "Camera clock drifts",
+   "kind": "evaluation record",
+   "fault": "sync_drift",
+   "onset": 10,
+   "description": "The same twenty real XDOF episodes; from episode 11 a synthetic 'sync_drift' fault was written into the recordings (parameters {\"drift_s\": 0.2058844581437775, \"camera_pick\": 0.06176295271885812}).",
+   "steps": [
+    {
+     "index": 0,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9978491162729038,
+      "max_gap_s": 0.046712576000000894,
+      "cam_rate_ratio_min": 0.9997491829249635,
+      "cam_offset_max_s": 0.11798118399999424,
+      "delay_ms": 147.0,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 1,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9981053564880902,
+      "max_gap_s": 0.08605952000000006,
+      "cam_rate_ratio_min": 0.999733830864881,
+      "cam_offset_max_s": 0.119115776000001,
+      "delay_ms": 136.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 2,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9988786987279641,
+      "max_gap_s": 0.03843532799999849,
+      "cam_rate_ratio_min": 0.9997491829249902,
+      "cam_offset_max_s": 0.11416192000000001,
+      "delay_ms": 174.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 3,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9976579779435782,
+      "max_gap_s": 0.03743615999999861,
+      "cam_rate_ratio_min": 0.9997415068360256,
+      "cam_offset_max_s": 0.11166259199999828,
+      "delay_ms": 169.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 4,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9985646232679438,
+      "max_gap_s": 0.04041600000000045,
+      "cam_rate_ratio_min": 0.9997491829249635,
+      "cam_offset_max_s": 0.11300198400000001,
+      "delay_ms": 136.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 5,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9981436125835426,
+      "max_gap_s": 0.04787839999999832,
+      "cam_rate_ratio_min": 0.9997491829249635,
+      "cam_offset_max_s": 0.12119989600000025,
+      "delay_ms": 139.0,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 6,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9971995445750218,
+      "max_gap_s": 0.0659120640000026,
+      "cam_rate_ratio_min": 0.9997415068359723,
+      "cam_offset_max_s": 0.120902912,
+      "delay_ms": 153.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 7,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9954765545360792,
+      "max_gap_s": 0.03862451199999839,
+      "cam_rate_ratio_min": 0.9997491829249635,
+      "cam_offset_max_s": 0.11623731200000001,
+      "delay_ms": 156.0,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 8,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9985531364473802,
+      "max_gap_s": 0.05828864000000067,
+      "cam_rate_ratio_min": 0.9997722118992045,
+      "cam_offset_max_s": 0.11027200000000001,
+      "delay_ms": 166.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 9,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9974134277062342,
+      "max_gap_s": 0.05874278400000321,
+      "cam_rate_ratio_min": 0.9997722118992411,
+      "cam_offset_max_s": 0.12092364800000001,
+      "delay_ms": 157.0,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 10,
+     "affected": true,
+     "m": {
+      "rec_ratio": 1.0011020130960264,
+      "max_gap_s": 0.03375180799999811,
+      "cam_rate_ratio_min": 0.9974138753814882,
+      "cam_offset_max_s": 0.128692992,
+      "delay_ms": 164.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 11,
+     "affected": true,
+     "m": {
+      "rec_ratio": 0.9987829230813088,
+      "max_gap_s": 0.05157427199999631,
+      "cam_rate_ratio_min": 0.9970634686135255,
+      "cam_offset_max_s": 0.12804326400000002,
+      "delay_ms": 150.0,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 12,
+     "affected": true,
+     "m": {
+      "rec_ratio": 0.9979179440016177,
+      "max_gap_s": 0.061903872000002025,
+      "cam_rate_ratio_min": 0.9959875942574139,
+      "cam_offset_max_s": 0.10752947200000307,
+      "delay_ms": 148.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 13,
+     "affected": true,
+     "m": {
+      "rec_ratio": 1.0010712262978099,
+      "max_gap_s": 0.03386470400000263,
+      "cam_rate_ratio_min": 0.9960604811908573,
+      "cam_offset_max_s": 0.11562752000000001,
+      "delay_ms": 164.0,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 14,
+     "affected": true,
+     "m": {
+      "rec_ratio": 0.9980479778428236,
+      "max_gap_s": 0.05973990399999707,
+      "cam_rate_ratio_min": 0.9974997767844573,
+      "cam_offset_max_s": 0.11307852800000001,
+      "delay_ms": 148.0,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 15,
+     "affected": true,
+     "m": {
+      "rec_ratio": 1.0009865723656879,
+      "max_gap_s": 0.06705433599999822,
+      "cam_rate_ratio_min": 0.9983059945240361,
+      "cam_offset_max_s": 0.12186240000000001,
+      "delay_ms": 178.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 16,
+     "affected": true,
+     "m": {
+      "rec_ratio": 0.9990051507106579,
+      "max_gap_s": 0.06757273599998825,
+      "cam_rate_ratio_min": 0.9975862303811247,
+      "cam_offset_max_s": 0.121046784,
+      "delay_ms": 134.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 17,
+     "affected": true,
+     "m": {
+      "rec_ratio": 0.9986450384119077,
+      "max_gap_s": 0.05195673599999928,
+      "cam_rate_ratio_min": 0.9949041209903466,
+      "cam_offset_max_s": 0.12025856000000346,
+      "delay_ms": 161.0,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 18,
+     "affected": true,
+     "m": {
+      "rec_ratio": 1.0010789228198809,
+      "max_gap_s": 0.06985574400000161,
+      "cam_rate_ratio_min": 0.9969918959912808,
+      "cam_offset_max_s": 0.130525952,
+      "delay_ms": 183.0,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 19,
+     "affected": true,
+     "m": {
+      "rec_ratio": 0.9981397868420303,
+      "max_gap_s": 0.0927444479999977,
+      "cam_rate_ratio_min": 0.9994610206553797,
+      "cam_offset_max_s": 0.133393664,
+      "delay_ms": 156.0,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    }
+   ],
+   "detectors": {
+    "rules": [
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     }
+    ],
+    "robust_z": [
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     }
+    ],
+    "model": [
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "camera",
+   "label": "Camera drops frames",
+   "kind": "evaluation record",
+   "fault": "camera",
+   "onset": 10,
+   "description": "The same twenty real XDOF episodes; from episode 11 a synthetic 'camera' fault was written into the recordings (parameters {\"keep_fraction\": 0.647989274488711, \"camera_pick\": 0.7597413942380391}).",
+   "steps": [
+    {
+     "index": 0,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9978491162729038,
+      "max_gap_s": 0.046712576000000894,
+      "cam_rate_ratio_min": 0.9997491829249635,
+      "cam_offset_max_s": 0.11798118399999424,
+      "delay_ms": 147.0,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 1,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9981053564880902,
+      "max_gap_s": 0.08605952000000006,
+      "cam_rate_ratio_min": 0.999733830864881,
+      "cam_offset_max_s": 0.119115776000001,
+      "delay_ms": 136.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 2,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9988786987279641,
+      "max_gap_s": 0.03843532799999849,
+      "cam_rate_ratio_min": 0.9997491829249902,
+      "cam_offset_max_s": 0.11416192000000001,
+      "delay_ms": 174.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 3,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9976579779435782,
+      "max_gap_s": 0.03743615999999861,
+      "cam_rate_ratio_min": 0.9997415068360256,
+      "cam_offset_max_s": 0.11166259199999828,
+      "delay_ms": 169.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 4,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9985646232679438,
+      "max_gap_s": 0.04041600000000045,
+      "cam_rate_ratio_min": 0.9997491829249635,
+      "cam_offset_max_s": 0.11300198400000001,
+      "delay_ms": 136.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 5,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9981436125835426,
+      "max_gap_s": 0.04787839999999832,
+      "cam_rate_ratio_min": 0.9997491829249635,
+      "cam_offset_max_s": 0.12119989600000025,
+      "delay_ms": 139.0,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 6,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9971995445750218,
+      "max_gap_s": 0.0659120640000026,
+      "cam_rate_ratio_min": 0.9997415068359723,
+      "cam_offset_max_s": 0.120902912,
+      "delay_ms": 153.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 7,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9954765545360792,
+      "max_gap_s": 0.03862451199999839,
+      "cam_rate_ratio_min": 0.9997491829249635,
+      "cam_offset_max_s": 0.11623731200000001,
+      "delay_ms": 156.0,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 8,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9985531364473802,
+      "max_gap_s": 0.05828864000000067,
+      "cam_rate_ratio_min": 0.9997722118992045,
+      "cam_offset_max_s": 0.11027200000000001,
+      "delay_ms": 166.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 9,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9974134277062342,
+      "max_gap_s": 0.05874278400000321,
+      "cam_rate_ratio_min": 0.9997722118992411,
+      "cam_offset_max_s": 0.12092364800000001,
+      "delay_ms": 157.0,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 10,
+     "affected": true,
+     "m": {
+      "rec_ratio": 1.0011020130960264,
+      "max_gap_s": 0.03375180799999811,
+      "cam_rate_ratio_min": 0.49988418683159097,
+      "cam_offset_max_s": 0.141200640000001,
+      "delay_ms": 164.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 11,
+     "affected": true,
+     "m": {
+      "rec_ratio": 0.9987829230813088,
+      "max_gap_s": 0.05157427199999631,
+      "cam_rate_ratio_min": 0.49988034863974773,
+      "cam_offset_max_s": 0.14818841599999644,
+      "delay_ms": 150.0,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 12,
+     "affected": true,
+     "m": {
+      "rec_ratio": 0.9979179440016177,
+      "max_gap_s": 0.061903872000002025,
+      "cam_rate_ratio_min": 0.4998822677282885,
+      "cam_offset_max_s": 0.10752947200000307,
+      "delay_ms": 148.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 13,
+     "affected": true,
+     "m": {
+      "rec_ratio": 1.0010712262978099,
+      "max_gap_s": 0.03386470400000263,
+      "cam_rate_ratio_min": 0.499888025082389,
+      "cam_offset_max_s": 0.11562752000000001,
+      "delay_ms": 164.0,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 14,
+     "affected": true,
+     "m": {
+      "rec_ratio": 0.9980479778428236,
+      "max_gap_s": 0.05973990399999707,
+      "cam_rate_ratio_min": 0.49988610594960226,
+      "cam_offset_max_s": 0.12435763199999883,
+      "delay_ms": 148.0,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 15,
+     "affected": true,
+     "m": {
+      "rec_ratio": 1.0009865723656879,
+      "max_gap_s": 0.06705433599999822,
+      "cam_rate_ratio_min": 0.4998822677283151,
+      "cam_offset_max_s": 0.13138022399999727,
+      "delay_ms": 178.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 16,
+     "affected": true,
+     "m": {
+      "rec_ratio": 0.9990051507106579,
+      "max_gap_s": 0.06757273599998825,
+      "cam_rate_ratio_min": 0.4998822677283018,
+      "cam_offset_max_s": 0.121046784,
+      "delay_ms": 134.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 17,
+     "affected": true,
+     "m": {
+      "rec_ratio": 0.9986450384119077,
+      "max_gap_s": 0.05195673599999928,
+      "cam_rate_ratio_min": 0.4998841868316043,
+      "cam_offset_max_s": 0.12828876800000444,
+      "delay_ms": 161.0,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 18,
+     "affected": true,
+     "m": {
+      "rec_ratio": 1.0010789228198809,
+      "max_gap_s": 0.06985574400000161,
+      "cam_rate_ratio_min": 0.49988418683163094,
+      "cam_offset_max_s": 0.130525952,
+      "delay_ms": 183.0,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 19,
+     "affected": true,
+     "m": {
+      "rec_ratio": 0.9981397868420303,
+      "max_gap_s": 0.0927444479999977,
+      "cam_rate_ratio_min": 0.49988994422985816,
+      "cam_offset_max_s": 0.133393664,
+      "delay_ms": 156.0,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    }
+   ],
+   "detectors": {
+    "rules": [
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     }
+    ],
+    "robust_z": [
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": true,
+      "category": "camera",
+      "why": "largest change: cam_rate_ratio_min (z 49.99)"
+     },
+     {
+      "alert": true,
+      "category": "camera",
+      "why": "largest change: cam_rate_ratio_min (z 49.99)"
+     },
+     {
+      "alert": true,
+      "category": "camera",
+      "why": "largest change: cam_rate_ratio_min (z 49.99)"
+     },
+     {
+      "alert": true,
+      "category": "camera",
+      "why": "largest change: cam_rate_ratio_min (z 49.99)"
+     },
+     {
+      "alert": true,
+      "category": "camera",
+      "why": "largest change: cam_rate_ratio_min (z 49.99)"
+     },
+     {
+      "alert": true,
+      "category": "camera",
+      "why": "largest change: cam_rate_ratio_min (z 49.99)"
+     },
+     {
+      "alert": true,
+      "category": "camera",
+      "why": "largest change: cam_rate_ratio_min (z 49.99)"
+     },
+     {
+      "alert": true,
+      "category": "camera",
+      "why": "largest change: cam_rate_ratio_min (z 49.99)"
+     },
+     {
+      "alert": true,
+      "category": "camera",
+      "why": "largest change: cam_rate_ratio_min (z 49.99)"
+     }
+    ],
+    "model": [
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "missing",
+   "label": "Stream goes missing",
+   "kind": "evaluation record",
+   "fault": "missing",
+   "onset": 10,
+   "description": "The same twenty real XDOF episodes; from episode 11 a synthetic 'missing' fault was written into the recordings (parameters {\"stream\": \"action\", \"camera_pick\": 0.8212661452077188}).",
+   "steps": [
+    {
+     "index": 0,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9978491162729038,
+      "max_gap_s": 0.046712576000000894,
+      "cam_rate_ratio_min": 0.9997491829249635,
+      "cam_offset_max_s": 0.11798118399999424,
+      "delay_ms": 147.0,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 1,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9981053564880902,
+      "max_gap_s": 0.08605952000000006,
+      "cam_rate_ratio_min": 0.999733830864881,
+      "cam_offset_max_s": 0.119115776000001,
+      "delay_ms": 136.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 2,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9988786987279641,
+      "max_gap_s": 0.03843532799999849,
+      "cam_rate_ratio_min": 0.9997491829249902,
+      "cam_offset_max_s": 0.11416192000000001,
+      "delay_ms": 174.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 3,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9976579779435782,
+      "max_gap_s": 0.03743615999999861,
+      "cam_rate_ratio_min": 0.9997415068360256,
+      "cam_offset_max_s": 0.11166259199999828,
+      "delay_ms": 169.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 4,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9985646232679438,
+      "max_gap_s": 0.04041600000000045,
+      "cam_rate_ratio_min": 0.9997491829249635,
+      "cam_offset_max_s": 0.11300198400000001,
+      "delay_ms": 136.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 5,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9981436125835426,
+      "max_gap_s": 0.04787839999999832,
+      "cam_rate_ratio_min": 0.9997491829249635,
+      "cam_offset_max_s": 0.12119989600000025,
+      "delay_ms": 139.0,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 6,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9971995445750218,
+      "max_gap_s": 0.0659120640000026,
+      "cam_rate_ratio_min": 0.9997415068359723,
+      "cam_offset_max_s": 0.120902912,
+      "delay_ms": 153.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 7,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9954765545360792,
+      "max_gap_s": 0.03862451199999839,
+      "cam_rate_ratio_min": 0.9997491829249635,
+      "cam_offset_max_s": 0.11623731200000001,
+      "delay_ms": 156.0,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 8,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9985531364473802,
+      "max_gap_s": 0.05828864000000067,
+      "cam_rate_ratio_min": 0.9997722118992045,
+      "cam_offset_max_s": 0.11027200000000001,
+      "delay_ms": 166.5,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 9,
+     "affected": false,
+     "m": {
+      "rec_ratio": 0.9974134277062342,
+      "max_gap_s": 0.05874278400000321,
+      "cam_rate_ratio_min": 0.9997722118992411,
+      "cam_offset_max_s": 0.12092364800000001,
+      "delay_ms": 157.0,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 10,
+     "affected": true,
+     "m": {
+      "rec_ratio": 1.0011020130960264,
+      "max_gap_s": 0.03375180799999811,
+      "cam_rate_ratio_min": 0.9997568591318308,
+      "cam_offset_max_s": 0.141200640000001,
+      "delay_ms": null,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 11,
+     "affected": true,
+     "m": {
+      "rec_ratio": 0.9987829230813088,
+      "max_gap_s": 0.05157427199999631,
+      "cam_rate_ratio_min": 0.9997415068359723,
+      "cam_offset_max_s": 0.12804326400000002,
+      "delay_ms": null,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 12,
+     "affected": true,
+     "m": {
+      "rec_ratio": 0.9979179440016177,
+      "max_gap_s": 0.061903872000002025,
+      "cam_rate_ratio_min": 0.9997491829249635,
+      "cam_offset_max_s": 0.10752947200000307,
+      "delay_ms": null,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 13,
+     "affected": true,
+     "m": {
+      "rec_ratio": 1.0010712262978099,
+      "max_gap_s": 0.03386470400000263,
+      "cam_rate_ratio_min": 0.999764535456577,
+      "cam_offset_max_s": 0.11562752000000001,
+      "delay_ms": null,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 14,
+     "affected": true,
+     "m": {
+      "rec_ratio": 0.9980479778428236,
+      "max_gap_s": 0.05973990399999707,
+      "cam_rate_ratio_min": 0.9997491829249635,
+      "cam_offset_max_s": 0.11307852800000001,
+      "delay_ms": null,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 15,
+     "affected": true,
+     "m": {
+      "rec_ratio": 1.0009865723656879,
+      "max_gap_s": 0.06705433599999822,
+      "cam_rate_ratio_min": 0.9997491829249902,
+      "cam_offset_max_s": 0.12843340799999226,
+      "delay_ms": null,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 16,
+     "affected": true,
+     "m": {
+      "rec_ratio": 0.9990051507106579,
+      "max_gap_s": 0.06757273599998825,
+      "cam_rate_ratio_min": 0.9997491829249902,
+      "cam_offset_max_s": 0.121046784,
+      "delay_ms": null,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 17,
+     "affected": true,
+     "m": {
+      "rec_ratio": 0.9986450384119077,
+      "max_gap_s": 0.05195673599999928,
+      "cam_rate_ratio_min": 0.9997568591318308,
+      "cam_offset_max_s": 0.12025856000000346,
+      "delay_ms": null,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 18,
+     "affected": true,
+     "m": {
+      "rec_ratio": 1.0010789228198809,
+      "max_gap_s": 0.06985574400000161,
+      "cam_rate_ratio_min": 0.9997568591318308,
+      "cam_offset_max_s": 0.130525952,
+      "delay_ms": null,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    },
+    {
+     "index": 19,
+     "affected": true,
+     "m": {
+      "rec_ratio": 0.9981397868420303,
+      "max_gap_s": 0.0927444479999977,
+      "cam_rate_ratio_min": 0.9997645354566835,
+      "cam_offset_max_s": 0.133393664,
+      "delay_ms": null,
+      "n_cams": 3,
+      "gaps_per_min": 0.0
+     }
+    }
+   ],
+   "detectors": {
+    "rules": [
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     }
+    ],
+    "robust_z": [
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": true,
+      "category": "missing",
+      "why": "largest change: has_action (z 50.0)"
+     },
+     {
+      "alert": true,
+      "category": "missing",
+      "why": "largest change: has_action (z 50.0)"
+     },
+     {
+      "alert": true,
+      "category": "missing",
+      "why": "largest change: has_action (z 50.0)"
+     },
+     {
+      "alert": true,
+      "category": "missing",
+      "why": "largest change: has_action (z 50.0)"
+     },
+     {
+      "alert": true,
+      "category": "missing",
+      "why": "largest change: has_action (z 50.0)"
+     },
+     {
+      "alert": true,
+      "category": "missing",
+      "why": "largest change: has_action (z 50.0)"
+     },
+     {
+      "alert": true,
+      "category": "missing",
+      "why": "largest change: has_action (z 50.0)"
+     },
+     {
+      "alert": true,
+      "category": "missing",
+      "why": "largest change: has_action (z 50.0)"
+     },
+     {
+      "alert": true,
+      "category": "missing",
+      "why": "largest change: has_action (z 50.0)"
+     }
+    ],
+    "model": [
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": false,
+      "category": null,
+      "why": null
+     },
+     {
+      "alert": true,
+      "category": "missing",
+      "why": "fault probability 0.667"
+     },
+     {
+      "alert": true,
+      "category": "missing",
+      "why": "fault probability 1.0"
+     },
+     {
+      "alert": true,
+      "category": "missing",
+      "why": "fault probability 1.0"
+     },
+     {
+      "alert": true,
+      "category": "missing",
+      "why": "fault probability 1.0"
+     },
+     {
+      "alert": true,
+      "category": "missing",
+      "why": "fault probability 1.0"
+     },
+     {
+      "alert": true,
+      "category": "missing",
+      "why": "fault probability 1.0"
+     },
+     {
+      "alert": true,
+      "category": "missing",
+      "why": "fault probability 1.0"
+     },
+     {
+      "alert": true,
+      "category": "missing",
+      "why": "fault probability 1.0"
+     },
+     {
+      "alert": true,
+      "category": "missing",
+      "why": "fault probability 1.0"
+     }
+    ]
+   }
+  }
+ ]
+}

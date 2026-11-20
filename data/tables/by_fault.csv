@@ -1,0 +1,49 @@
+detector,fault,n,detected,recall,median_delay_min,strict_category,subsystem_category,insufficient,masked
+rules,camera,20,0,0.0,nan,nan,nan,0,0
+rules,missing,20,0,0.0,nan,nan,nan,0,0
+rules,recorder_pause,20,0,0.0,nan,nan,nan,0,0
+rules,recorder_rate,20,8,0.4,3.077985,1.0,1.0,0,0
+rules,sync_drift,20,0,0.0,nan,nan,nan,0,0
+rules,timing_delay,20,17,0.85,3.754835,1.0,1.0,0,0
+rules,all (persistent),83,18,0.216867,3.175235,1.0,1.0,0,0
+rules,all (intermittent),37,7,0.189189,5.291648,1.0,1.0,0,0
+rules_per_episode,camera,20,2,0.1,6.750832,0.0,0.0,0,0
+rules_per_episode,missing,20,2,0.1,6.750832,0.0,0.0,0,0
+rules_per_episode,recorder_pause,20,2,0.1,6.750832,0.5,0.5,0,0
+rules_per_episode,recorder_rate,20,9,0.45,0.966501,0.888889,0.888889,0,0
+rules_per_episode,sync_drift,20,2,0.1,5.269571,0.0,0.0,0,0
+rules_per_episode,timing_delay,20,19,0.95,0.966501,1.0,1.0,0,1
+rules_per_episode,all (persistent),83,23,0.277108,1.084366,0.782609,0.782609,0,1
+rules_per_episode,all (intermittent),37,13,0.351351,1.447178,0.769231,0.769231,0,0
+robust_z,camera,20,19,0.95,1.77456,0.947368,0.947368,0,1
+robust_z,missing,20,12,0.6,2.477127,0.666667,0.666667,0,0
+robust_z,recorder_pause,20,20,1.0,1.941098,0.9,0.9,0,0
+robust_z,recorder_rate,20,20,1.0,1.915261,0.95,0.95,0,0
+robust_z,sync_drift,20,14,0.7,1.915261,0.785714,0.857143,0,0
+robust_z,timing_delay,20,19,0.95,1.900528,0.631579,0.631579,0,0
+robust_z,all (persistent),83,74,0.891566,1.929994,0.837838,0.837838,0,1
+robust_z,all (intermittent),37,30,0.810811,1.837544,0.8,0.833333,0,0
+model_101,camera,20,0,0.0,nan,nan,nan,0,0
+model_101,missing,20,9,0.45,2.133046,1.0,1.0,0,0
+model_101,recorder_pause,20,0,0.0,nan,nan,nan,0,0
+model_101,recorder_rate,20,0,0.0,nan,nan,nan,0,0
+model_101,sync_drift,20,0,0.0,nan,nan,nan,0,0
+model_101,timing_delay,20,5,0.25,3.758393,1.0,1.0,0,0
+model_101,all (persistent),83,7,0.084337,2.244129,1.0,1.0,0,0
+model_101,all (intermittent),37,7,0.189189,2.203141,1.0,1.0,0,0
+model_202,camera,20,0,0.0,nan,nan,nan,0,0
+model_202,missing,20,9,0.45,2.133046,1.0,1.0,0,0
+model_202,recorder_pause,20,14,0.7,4.20437,1.0,1.0,0,0
+model_202,recorder_rate,20,0,0.0,nan,nan,nan,0,0
+model_202,sync_drift,20,0,0.0,nan,nan,nan,0,0
+model_202,timing_delay,20,17,0.85,2.203141,1.0,1.0,0,0
+model_202,all (persistent),83,30,0.361446,2.698575,1.0,1.0,0,0
+model_202,all (intermittent),37,10,0.27027,2.96499,1.0,1.0,0,0
+model_303,camera,20,0,0.0,nan,nan,nan,0,0
+model_303,missing,20,9,0.45,2.133046,1.0,1.0,0,0
+model_303,recorder_pause,20,0,0.0,nan,nan,nan,0,0
+model_303,recorder_rate,20,0,0.0,nan,nan,nan,0,0
+model_303,sync_drift,20,0,0.0,nan,nan,nan,0,0
+model_303,timing_delay,20,0,0.0,nan,nan,nan,0,0
+model_303,all (persistent),83,5,0.060241,2.244129,1.0,1.0,0,0
+model_303,all (intermittent),37,4,0.108108,1.715907,1.0,1.0,0,0

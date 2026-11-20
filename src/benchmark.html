@@ -1,0 +1,79 @@
+<section class="hero">
+  <p class="eyebrow">Benchmark</p>
+  <h1>Rules, a statistical baseline and a trained model on an unseen recorder</h1>
+  <p class="lede">{{ data.test.fault_trials | int }} synthetic faults written into {{ data.test.segments | int }} sequences of real XDOF recordings, plus {{ data.test.control_trials | int }} untouched sequences ({{ data.test.control_hours | f1 }} station-hours). Every model and threshold was frozen on another team's data before this set was scored once.</p>
+  <p><span class="tag syn">Synthetic faults</span> <span class="tag real">Real recordings</span></p>
+</section>
+
+<h2 id="main">Main comparison</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Detector</th><th class="n">Faults detected</th><th class="n">Recall (95% CI)</th><th class="n">Alerts per 100 h, unmodified (95% CI)</th><th class="n">Median delay</th><th class="n">Right subsystem</th></tr></thead>
+<tbody>
+<tr><td><span class="swatch" style="background:var(--s-rules)"></span>Respite rules (shipped)</td><td class="n">{{ test.point.rules.detected | int }} / {{ test.point.rules.n_fault_trials | int }}</td><td class="n">{{ test.point.rules.recall | pct0 }} ({{ test.ci95.rules.recall | ci_pct0 }})</td><td class="n">{{ test.point.rules.alerts_per_100h | f0 }} ({{ test.ci95.rules.alerts_per_100h | ci_f0 }})</td><td class="n">{{ test.point.rules.median_delay_min | f1 }} min</td><td class="n">{{ test.point.rules.subsystem_category | pct0 }}</td></tr>
+<tr><td><span class="swatch" style="background:var(--s-per)"></span>Rules, one episode at a time</td><td class="n">{{ test.point.rules_per_episode.detected | int }} / {{ test.point.rules_per_episode.n_fault_trials | int }}</td><td class="n">{{ test.point.rules_per_episode.recall | pct0 }} ({{ test.ci95.rules_per_episode.recall | ci_pct0 }})</td><td class="n">{{ test.point.rules_per_episode.alerts_per_100h | f0 }} ({{ test.ci95.rules_per_episode.alerts_per_100h | ci_f0 }})</td><td class="n">{{ test.point.rules_per_episode.median_delay_min | f1 }} min</td><td class="n">{{ test.point.rules_per_episode.subsystem_category | pct0 }}</td></tr>
+<tr><td><span class="swatch" style="background:var(--s-z)"></span>Robust z (no training)</td><td class="n">{{ test.point.robust_z.detected | int }} / {{ test.point.robust_z.n_fault_trials | int }}</td><td class="n">{{ test.point.robust_z.recall | pct0 }} ({{ test.ci95.robust_z.recall | ci_pct0 }})</td><td class="n">{{ test.point.robust_z.alerts_per_100h | f0 }} ({{ test.ci95.robust_z.alerts_per_100h | ci_f0 }})</td><td class="n">{{ test.point.robust_z.median_delay_min | f1 }} min</td><td class="n">{{ test.point.robust_z.subsystem_category | pct0 }}</td></tr>
+<tr><td><span class="swatch" style="background:var(--s-model)"></span>Trained model, seed 101</td><td class="n">{{ test.point.model_101.detected | int }} / {{ test.point.model_101.n_fault_trials | int }}</td><td class="n">{{ test.point.model_101.recall | pct0 }} ({{ test.ci95.model_101.recall | ci_pct0 }})</td><td class="n">{{ test.point.model_101.alerts_per_100h | f0 }} ({{ test.ci95.model_101.alerts_per_100h | ci_f0 }})</td><td class="n">{{ test.point.model_101.median_delay_min | f1 }} min</td><td class="n">{{ test.point.model_101.subsystem_category | pct0 }}</td></tr>
+<tr><td><span class="swatch" style="background:var(--s-model)"></span>Trained model, seed 202</td><td class="n">{{ test.point.model_202.detected | int }} / {{ test.point.model_202.n_fault_trials | int }}</td><td class="n">{{ test.point.model_202.recall | pct0 }} ({{ test.ci95.model_202.recall | ci_pct0 }})</td><td class="n">{{ test.point.model_202.alerts_per_100h | f0 }} ({{ test.ci95.model_202.alerts_per_100h | ci_f0 }})</td><td class="n">{{ test.point.model_202.median_delay_min | f1 }} min</td><td class="n">{{ test.point.model_202.subsystem_category | pct0 }}</td></tr>
+<tr><td><span class="swatch" style="background:var(--s-model)"></span>Trained model, seed 303</td><td class="n">{{ test.point.model_303.detected | int }} / {{ test.point.model_303.n_fault_trials | int }}</td><td class="n">{{ test.point.model_303.recall | pct0 }} ({{ test.ci95.model_303.recall | ci_pct0 }})</td><td class="n">{{ test.point.model_303.alerts_per_100h | f0 }} ({{ test.ci95.model_303.alerts_per_100h | ci_f0 }})</td><td class="n">{{ test.point.model_303.median_delay_min | f1 }} min</td><td class="n">{{ test.point.model_303.subsystem_category | pct0 }}</td></tr>
+</tbody>
+<caption>95% bootstrap intervals over the {{ data.test.segments | int }} test segments. "Alerts, unmodified" are alert events on the untouched sequences; they are not all false (see below). "Right subsystem" is among detected faults.</caption>
+</table></div>
+
+<figure>
+  <img src="figures/test_recall_vs_alert_rate.png" alt="Line chart: share of injected faults detected (vertical) against alert events per 100 station-hours on unmodified recordings (horizontal, log scale). The robust z curve reaches about 0.87 detection at its frozen threshold; the three trained-model curves stay low; the shipped rules are a single point near 0.21." width="1152" height="720" loading="lazy">
+  <figcaption>Detection against alert rate on the test set, sweeping each score-based detector's threshold. The shipped rules have no threshold to sweep, so they are one point. Tables behind this figure: <a href="data/tables/curves.csv">curves.csv</a>.</figcaption>
+</figure>
+
+<h2 id="decision">The pre-registered decision</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Against the shipped rules</th><th class="n">Recall difference (95% CI)</th><th class="n">Alert-rate difference per 100 h (95% CI)</th><th>Better by the fixed rule?</th></tr></thead>
+<tbody>
+<tr><td>Robust z</td><td class="n">{{ test.paired.robust_z_vs_rules.recall | ci_pp0 }}</td><td class="n">{{ test.paired.robust_z_vs_rules.alerts_per_100h | ci_f0 }}</td><td>{{ decision.detectors.robust_z.better_than_rules | yesno }}</td></tr>
+<tr><td>Trained model, seed 101</td><td class="n">{{ test.paired.model_101_vs_rules.recall | ci_pp0 }}</td><td class="n">{{ test.paired.model_101_vs_rules.alerts_per_100h | ci_f0 }}</td><td>{{ decision.detectors.model_101.better_than_rules | yesno }}</td></tr>
+<tr><td>Trained model, seed 202</td><td class="n">{{ test.paired.model_202_vs_rules.recall | ci_pp0 }}</td><td class="n">{{ test.paired.model_202_vs_rules.alerts_per_100h | ci_f0 }}</td><td>{{ decision.detectors.model_202.better_than_rules | yesno }}</td></tr>
+<tr><td>Trained model, seed 303</td><td class="n">{{ test.paired.model_303_vs_rules.recall | ci_pp0 }}</td><td class="n">{{ test.paired.model_303_vs_rules.alerts_per_100h | ci_f0 }}</td><td>{{ decision.detectors.model_303.better_than_rules | yesno }}</td></tr>
+</tbody>
+<caption>Fixed before the test run: "better" means the recall-difference interval is above zero and the alert rate on unmodified recordings is not higher (point estimate, or an interval that includes zero). Differences are paired on the same resampled segments.</caption>
+</table></div>
+
+<h2 id="faults">By fault type</h2>
+<figure>
+  <img src="figures/test_by_fault.png" alt="Grouped bar chart of the share of faults detected for each fault type and detector, with 95% intervals. The shipped rules detect most command-to-motion delays and some recorder-rate drops, and none of the camera, pause, drift or missing-stream faults; robust z detects most faults of every type." width="1332" height="684" loading="lazy">
+  <figcaption>Twenty trials per fault type; bars show 95% Wilson intervals. Table: <a href="data/tables/by_fault.csv">by_fault.csv</a>.</figcaption>
+</figure>
+<div class="table-wrap"><table>
+<thead><tr><th>Fault</th><th class="n">Rules</th><th class="n">Rules, one episode</th><th class="n">Robust z</th><th class="n">Model 101</th><th class="n">Model 202</th><th class="n">Model 303</th></tr></thead>
+<tbody>
+<tr><td>Camera frames</td><td class="n">{{ test.by_fault.rules.camera.detected | int }}/20</td><td class="n">{{ test.by_fault.rules_per_episode.camera.detected | int }}/20</td><td class="n">{{ test.by_fault.robust_z.camera.detected | int }}/20</td><td class="n">{{ test.by_fault.model_101.camera.detected | int }}/20</td><td class="n">{{ test.by_fault.model_202.camera.detected | int }}/20</td><td class="n">{{ test.by_fault.model_303.camera.detected | int }}/20</td></tr>
+<tr><td>Recorder rate</td><td class="n">{{ test.by_fault.rules.recorder_rate.detected | int }}/20</td><td class="n">{{ test.by_fault.rules_per_episode.recorder_rate.detected | int }}/20</td><td class="n">{{ test.by_fault.robust_z.recorder_rate.detected | int }}/20</td><td class="n">{{ test.by_fault.model_101.recorder_rate.detected | int }}/20</td><td class="n">{{ test.by_fault.model_202.recorder_rate.detected | int }}/20</td><td class="n">{{ test.by_fault.model_303.recorder_rate.detected | int }}/20</td></tr>
+<tr><td>Recorder pause</td><td class="n">{{ test.by_fault.rules.recorder_pause.detected | int }}/20</td><td class="n">{{ test.by_fault.rules_per_episode.recorder_pause.detected | int }}/20</td><td class="n">{{ test.by_fault.robust_z.recorder_pause.detected | int }}/20</td><td class="n">{{ test.by_fault.model_101.recorder_pause.detected | int }}/20</td><td class="n">{{ test.by_fault.model_202.recorder_pause.detected | int }}/20</td><td class="n">{{ test.by_fault.model_303.recorder_pause.detected | int }}/20</td></tr>
+<tr><td>Command-to-motion delay</td><td class="n">{{ test.by_fault.rules.timing_delay.detected | int }}/20</td><td class="n">{{ test.by_fault.rules_per_episode.timing_delay.detected | int }}/20</td><td class="n">{{ test.by_fault.robust_z.timing_delay.detected | int }}/20</td><td class="n">{{ test.by_fault.model_101.timing_delay.detected | int }}/20</td><td class="n">{{ test.by_fault.model_202.timing_delay.detected | int }}/20</td><td class="n">{{ test.by_fault.model_303.timing_delay.detected | int }}/20</td></tr>
+<tr><td>Camera clock drift</td><td class="n">{{ test.by_fault.rules.sync_drift.detected | int }}/20</td><td class="n">{{ test.by_fault.rules_per_episode.sync_drift.detected | int }}/20</td><td class="n">{{ test.by_fault.robust_z.sync_drift.detected | int }}/20</td><td class="n">{{ test.by_fault.model_101.sync_drift.detected | int }}/20</td><td class="n">{{ test.by_fault.model_202.sync_drift.detected | int }}/20</td><td class="n">{{ test.by_fault.model_303.sync_drift.detected | int }}/20</td></tr>
+<tr><td>Missing stream</td><td class="n">{{ test.by_fault.rules.missing.detected | int }}/20</td><td class="n">{{ test.by_fault.rules_per_episode.missing.detected | int }}/20</td><td class="n">{{ test.by_fault.robust_z.missing.detected | int }}/20</td><td class="n">{{ test.by_fault.model_101.missing.detected | int }}/20</td><td class="n">{{ test.by_fault.model_202.missing.detected | int }}/20</td><td class="n">{{ test.by_fault.model_303.missing.detected | int }}/20</td></tr>
+</tbody>
+</table></div>
+
+<h2 id="unmodified">Alerts on untouched recordings</h2>
+<p class="prose">Untouched sequences are real recordings and can hold real problems. After the results were in, each alert on them was compared with XDOF findings Respite documented before this study (exploratory; those findings are Respite's own measurements, not independent labels). Robust z: {{ test.unmodified_alerts.robust_z.documented | int }} of {{ test.unmodified_alerts.robust_z.alerts | int }} alerts line up with a documented problem. Rules: {{ test.unmodified_alerts.rules.documented | int }} of {{ test.unmodified_alerts.rules.alerts | int }}.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Detector</th><th>Stream</th><th>Date</th><th>Category</th><th>Measurement that moved</th><th>Matches an earlier documented finding?</th></tr></thead>
+<tbody>
+{% for a in test.unmodified_alert_list %}<tr><td>{{ a.detector }}</td><td>{{ a.station }}</td><td>{{ a.date }}</td><td>{{ a.category }}</td><td>{{ a.top_measurement }}</td><td>{{ a.adjudication }}</td></tr>
+{% endfor %}</tbody>
+<caption>Exploratory, added after the results were in. Earlier findings: Respite's documented XDOF analysis (2026-11-12), recomputed independently at the time; not independent labels.</caption>
+</table></div>
+
+<h2 id="ablations">With measurements removed</h2>
+<figure>
+  <img src="figures/test_ablations.png" alt="Bar chart of the share of faults detected by the shipped rules, robust z and the seed-101 model with all measurements, without camera measurements, without timestamp measurements, and without action and state measurements." width="1080" height="612" loading="lazy">
+  <figcaption>Each group of measurements removed from every episode, for all detectors. Table: <a href="data/tables/ablations.csv">ablations.csv</a>.</figcaption>
+</figure>
+
+<h2 id="hflow">HFlow</h2>
+HFLOW_BLOCK
+
+<h2 id="retro">Real recordings without injected faults</h2>
+<p class="prose">Every detector was also replayed over the untouched recordings, station by station. This is description, not accuracy: there are no labels, and the team data is in-sample for the rules. The clearest case is the development set's Station B, whose cameras delivered about half the frames its recorder logged from its first episode. The rules were in alert for {{ retrospective.team.station_b.rules.share_of_episodes_in_alert | pct0 }} of its episodes, in line with the recorder's own validity flag ({{ retrospective.team.station_b.recorder_flag.share_of_episodes_in_alert | pct0 }}). Robust z and the model compare a station with its own start, so this station looked normal to them: robust z raised no camera alert on it, and the models were in alert for at most {{ retrospective.team.station_b.model_303.share_of_episodes_in_alert | pct1 }} of its episodes. The <a href="report.html">report</a> has the day-by-day comparison.</p>
+
+<h2 id="more">More</h2>
+<p>Calibration of the model's probabilities, failure analysis and the full write-up are in the <a href="report.html">technical report</a>. Every scored trial is in <a href="data/tables/trials.csv">trials.csv</a>.</p>

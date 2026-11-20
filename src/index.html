@@ -1,0 +1,53 @@
+<section class="hero">
+  <p class="eyebrow">Research release · {{ meta.generated }}</p>
+  <h1>Respite: Detecting Recording-Station Failures in Robot Training Data</h1>
+  <p class="lede">Robot training data is recorded at stations: a robot, its cameras and a recorder. When one part of a station degrades, every episode it records can look fine on video while the streams no longer line up. Respite checks recordings for these relationships and points to the station. This release tests whether a trained model does that better than Respite's existing rules, on a recorder it has never seen.</p>
+  <div class="cta">
+    <a class="btn primary" href="report.html">Read the technical report</a>
+    <a class="btn" href="demo.html">Try the interactive demo</a>
+    <a class="btn" href="benchmark.html">See the benchmark</a>
+  </div>
+</section>
+
+<h2>What we found</h2>
+<div class="grid k3">
+  <div class="card">
+    <p class="eyebrow">Trained model</p>
+    <div class="stat">{{ test.point.model_303.recall | pct0 }} to {{ test.point.model_202.recall | pct0 }}<small>of injected faults detected on the unseen recorder, across three training seeds</small></div>
+    <p>It did well in cross-validation on the team it was trained on, then did not transfer to a 30 Hz recorder with different camera measurements. Our recommendation is not to ship it.</p>
+  </div>
+  <div class="card">
+    <p class="eyebrow">Shipped rules</p>
+    <div class="stat">{{ test.point.rules.recall | pct0 }}<small>detected ({{ test.ci95.rules.recall | ci_pct0 }}), with {{ test.point.rules.alerts_per_100h | f0 }} alerts per 100 station-hours on untouched recordings</small></div>
+    <p>Reliable on command-to-motion delay ({{ test.by_fault.rules.timing_delay.detected | int }} of 20). Blind to camera faults, pauses, clock drift and missing streams in this format, because they read measurements it does not carry or none at all.</p>
+  </div>
+  <div class="card">
+    <p class="eyebrow">Robust statistical baseline</p>
+    <div class="stat">{{ test.point.robust_z.recall | pct0 }}<small>detected ({{ test.ci95.robust_z.recall | ci_pct0 }}), with {{ test.point.robust_z.alerts_per_100h | f0 }} alerts per 100 station-hours on untouched recordings</small></div>
+    <p>No training: each measurement against the station's own first episodes. {{ test.unmodified_alerts.robust_z.documented | int }} of its {{ test.unmodified_alerts.robust_z.alerts | int }} alerts on untouched recordings match problems documented in that data earlier.</p>
+  </div>
+</div>
+<p class="note"><strong>Read with care.</strong> Every detection number here comes from synthetic faults written into real recordings, because no dataset we have carries independent labels of station faults. They show which faults each method can notice, not production accuracy. Nothing on this site ran live, and no customer result is claimed. See <a href="limitations.html">Limitations</a>.</p>
+
+<h2>The decision</h2>
+<div class="prose">
+<p><strong>A trained model is not reliably better than the rules.</strong> By the rule fixed before the test run, one of its three training seeds beat the shipped rules and two did worse (<a href="benchmark.html#decision">details</a>). We recommend not shipping it.</p>
+<p><strong>More measurements help more than learning.</strong> The robust baseline uses measurements the rules do not read, and caught {{ test.point.robust_z.recall | pct0 }} of faults against {{ test.point.rules.recall | pct0 }}, earlier in {{ test.paired_delay.robust_z_vs_rules.detector_faster | int }} of {{ test.paired_delay.robust_z_vs_rules.n | int }} faults both caught. It raises more alerts on untouched recordings, and it cannot see a station that was broken from its first episode; the rules can. The two belong side by side.</p>
+</div>
+
+<h2>How the test was set up</h2>
+<div class="grid k2">
+  <div class="card">
+    <h3>Two datasets, kept apart</h3>
+    <p>Development: one robotics team's recordings, two stations, {{ data.dev.episodes | int }} episodes. Respite's rules were tuned on it, so it is never used as test data. External test: {{ data.test.episodes | int }} episodes of XDOF ABC-130k (Apache-2.0), another company and another recorder, scored once.</p>
+  </div>
+  <div class="card">
+    <h3>Frozen before scoring</h3>
+    <p>The design, split and fault code were hashed before any training; the models and thresholds were hashed before the test run. Six fault types: camera frames, recorder rate, recorder pauses, command-to-motion delay, camera clock drift, missing streams.</p>
+  </div>
+</div>
+
+<h2>Work with us</h2>
+<div class="card">
+  <p>If you record robot training data, we will run this benchmark's checks on a batch of yours, on your machine, and report per station what we find, including where our checks cannot see. Ask for a pilot or an evaluation at <a href="https://respitelabs.net">respitelabs.net</a>.</p>
+</div>

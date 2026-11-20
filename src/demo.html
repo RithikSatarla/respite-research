@@ -1,0 +1,23 @@
+<section class="hero">
+  <p class="eyebrow">Interactive demo</p>
+  <h1>Watch a station go wrong, episode by episode</h1>
+  <p class="lede">Pick a scenario. Each one is twenty consecutive real episodes from one XDOF recording stream, either untouched or with a synthetic fault written into the files from a known episode onward. The charts show what Respite measured on each episode; the strips show what each detector said after every episode.</p>
+</section>
+
+<div class="note warn"><strong>What you are looking at.</strong> These are stored records from the benchmark's external test set, replayed in your browser. The recordings are real; the faults are synthetic and labelled. Nothing here is live telemetry, and nothing is computed in your browser except the drawing.</div>
+
+<section id="demo" aria-live="polite">
+  <div id="demo-controls" class="demo-controls" role="group" aria-label="Scenario"></div>
+  <div id="demo-out"></div>
+</section>
+
+<div class="prose">
+<h2>How to read it</h2>
+<ul>
+<li>The shaded area marks the episodes the fault was written into. Intermittent faults hit only some of them.</li>
+<li>A red cell means the detector was alerting after that episode. The text under each strip gives its first alert after the fault started and the reason it gave.</li>
+<li>"Not measured in this format" means the recording does not carry what that chart needs. In this format, for example, frozen camera frames cannot be seen at all.</li>
+<li>The trained model shown is the seed-101 model. It was trained on another team's recordings and mostly does not transfer to this recorder; the benchmark page has the numbers.</li>
+</ul>
+</div>
+<script src="assets/demo.js" defer></script>

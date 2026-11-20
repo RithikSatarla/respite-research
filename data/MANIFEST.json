@@ -1,0 +1,70 @@
+{
+ "generated": "2026-11-20",
+ "source_commit": "fe0be8baa93e",
+ "files": [
+  {
+   "path": "data/results.json",
+   "sha256": "919c091e4b810dc8d5113fdc2c105655488b098e37143c8ac1ce4d14533caadf"
+  },
+  {
+   "path": "data/demo.json",
+   "sha256": "3d45fff8602d2f0b1b048ae572c7494e93c7ddd9b5f50efd7ceb40925ae521a6"
+  },
+  {
+   "path": "data/tables/by_fault.csv",
+   "sha256": "95f021fbb3e9cf78395cef9e1166cb23c1ef144184c94fbf7c84577372c79ddf"
+  },
+  {
+   "path": "data/tables/by_station.csv",
+   "sha256": "fde663f37a16e3c4f164b109682812ba0e2feeda7895b6a9d7c8c56257efb859"
+  },
+  {
+   "path": "data/tables/ablations.csv",
+   "sha256": "3f16b58f81425a181b6d8aef1c9be119c000273bd0e9dd383d2bcc980b8cc4cb"
+  },
+  {
+   "path": "data/tables/curves.csv",
+   "sha256": "6773fd29c80be444e34bd2369c13fc7809899dd81a409ee3e23b701e45010c29"
+  },
+  {
+   "path": "data/tables/calibration.csv",
+   "sha256": "e8cbcfa1cc710f3df1e45988dbc76716b6db3e3c7dbfddc61259dad411e917fe"
+  },
+  {
+   "path": "data/tables/trials.csv",
+   "sha256": "c9c78cdccc798a9e0857acef6981a1f3207d166be8be74f1eb053e02ef1281f1"
+  },
+  {
+   "path": "figures/test_ablations.png",
+   "sha256": "5462f4ffa780ad910f13723f62ea8e9ff6216e8554a05a912ca296c524175935"
+  },
+  {
+   "path": "figures/test_ablations.svg",
+   "sha256": "9688919b478e70416df6a4d2be70a96236d5fb3b9171ea8f46abe44a419d46e5"
+  },
+  {
+   "path": "figures/test_by_fault.png",
+   "sha256": "96412b722c2fc84f22c1c03306ed70d93e93d7193652299aed4033c071d7b51b"
+  },
+  {
+   "path": "figures/test_by_fault.svg",
+   "sha256": "4419d26012cfdab75ba17f9fce52b424bf9b990ccd65fbc382fbb560a9fe6723"
+  },
+  {
+   "path": "figures/test_calibration.png",
+   "sha256": "e5dce391ce18d6ef3480fe414f8a13598eff2597f0e7cf64ce84e1f669259b6a"
+  },
+  {
+   "path": "figures/test_calibration.svg",
+   "sha256": "3250ec65f41bd40a22bd7e410971203766d4a7644f769803757965defcee1a35"
+  },
+  {
+   "path": "figures/test_recall_vs_alert_rate.png",
+   "sha256": "0396a6fa108ac6ccfe75839eef1b1706b4ee830db668d016e3c2e0725f69a0ae"
+  },
+  {
+   "path": "figures/test_recall_vs_alert_rate.svg",
+   "sha256": "cd36d89f85b236b3966e426f213241c3607c79f5be9302daeacf2b81845c2776"
+  }
+ ]
+}

@@ -1,0 +1,2358 @@
+{
+ "meta": {
+  "generated": "2026-11-20",
+  "source_commit": "fe0be8baa93e",
+  "protocol": "experiments/PROTOCOL.md (frozen; amendments listed there)",
+  "python": "3.11.1",
+  "sklearn": "1.9.1"
+ },
+ "data": {
+  "dev": {
+   "segments": 68,
+   "episodes": 1360,
+   "trials_per_draw": 476
+  },
+  "test": {
+   "segments": 20,
+   "episodes": 400,
+   "trials": 140,
+   "fault_trials": 120,
+   "control_trials": 20,
+   "control_hours": 6.849003573071388
+  }
+ },
+ "test": {
+  "point": {
+   "rules": {
+    "n_fault_trials": 120,
+    "n_control_trials": 20,
+    "detected": 25,
+    "recall": 0.20833333333333334,
+    "control_events": 1,
+    "control_hours": 6.849003573071388,
+    "alerts_per_100h": 14.600664013839271,
+    "precision": 0.9615384615384616,
+    "f1": 0.3424657534246575,
+    "median_delay_min": 3.1977078141333335,
+    "median_episodes_to_alert": 3.0,
+    "masked": 0,
+    "strict_category": 1.0,
+    "subsystem_category": 1.0,
+    "insufficient": 0,
+    "unknown_category": 0
+   },
+   "rules_per_episode": {
+    "n_fault_trials": 120,
+    "n_control_trials": 20,
+    "detected": 36,
+    "recall": 0.3,
+    "control_events": 7,
+    "control_hours": 6.849003573071388,
+    "alerts_per_100h": 102.20464809687489,
+    "precision": 0.8372093023255814,
+    "f1": 0.441717791411043,
+    "median_delay_min": 1.2153904288416668,
+    "median_episodes_to_alert": 1.0,
+    "masked": 1,
+    "strict_category": 0.7777777777777778,
+    "subsystem_category": 0.7777777777777778,
+    "insufficient": 0,
+    "unknown_category": 0
+   },
+   "robust_z": {
+    "n_fault_trials": 120,
+    "n_control_trials": 20,
+    "detected": 104,
+    "recall": 0.8666666666666667,
+    "control_events": 8,
+    "control_hours": 6.849003573071388,
+    "alerts_per_100h": 116.80531211071417,
+    "precision": 0.9285714285714286,
+    "f1": 0.896551724137931,
+    "median_delay_min": 1.9299937493333335,
+    "median_episodes_to_alert": 2.0,
+    "masked": 1,
+    "strict_category": 0.8269230769230769,
+    "subsystem_category": 0.8365384615384616,
+    "insufficient": 0,
+    "unknown_category": 0
+   },
+   "model_101": {
+    "n_fault_trials": 120,
+    "n_control_trials": 20,
+    "detected": 14,
+    "recall": 0.11666666666666667,
+    "control_events": 0,
+    "control_hours": 6.849003573071388,
+    "alerts_per_100h": 0.0,
+    "precision": 1.0,
+    "f1": 0.208955223880597,
+    "median_delay_min": 2.223634666666667,
+    "median_episodes_to_alert": 2.0,
+    "masked": 0,
+    "strict_category": 1.0,
+    "subsystem_category": 1.0,
+    "insufficient": 0,
+    "unknown_category": 0
+   },
+   "model_202": {
+    "n_fault_trials": 120,
+    "n_control_trials": 20,
+    "detected": 40,
+    "recall": 0.3333333333333333,
+    "control_events": 0,
+    "control_hours": 6.849003573071388,
+    "alerts_per_100h": 0.0,
+    "precision": 1.0,
+    "f1": 0.5,
+    "median_delay_min": 2.6985749327500006,
+    "median_episodes_to_alert": 3.0,
+    "masked": 0,
+    "strict_category": 1.0,
+    "subsystem_category": 1.0,
+    "insufficient": 0,
+    "unknown_category": 0
+   },
+   "model_303": {
+    "n_fault_trials": 120,
+    "n_control_trials": 20,
+    "detected": 9,
+    "recall": 0.075,
+    "control_events": 0,
+    "control_hours": 6.849003573071388,
+    "alerts_per_100h": 0.0,
+    "precision": 1.0,
+    "f1": 0.13953488372093023,
+    "median_delay_min": 2.1330462307833336,
+    "median_episodes_to_alert": 2.0,
+    "masked": 0,
+    "strict_category": 1.0,
+    "subsystem_category": 1.0,
+    "insufficient": 0,
+    "unknown_category": 0
+   }
+  },
+  "ci95": {
+   "rules": {
+    "recall": [
+     0.18333333333333332,
+     0.24166666666666667
+    ],
+    "alerts_per_100h": [
+     0.0,
+     48.50151619389094
+    ],
+    "precision": [
+     0.8928571428571429,
+     1.0
+    ],
+    "f1": [
+     0.3055555555555556,
+     0.38666666666666666
+    ],
+    "median_delay_min": [
+     2.179171413616667,
+     4.4896866852799935
+    ],
+    "subsystem_category": [
+     1.0,
+     1.0
+    ]
+   },
+   "rules_per_episode": {
+    "recall": [
+     0.21666666666666667,
+     0.4083333333333333
+    ],
+    "alerts_per_100h": [
+     24.51301201135834,
+     213.31398674217277
+    ],
+    "precision": [
+     0.7538461538461538,
+     0.9474021592442643
+    ],
+    "f1": [
+     0.34897813379519377,
+     0.5393347601212769
+    ],
+    "median_delay_min": [
+     0.8318104234166667,
+     2.2783226880000003
+    ],
+    "subsystem_category": [
+     0.5555555555555556,
+     1.0
+    ]
+   },
+   "robust_z": {
+    "recall": [
+     0.8,
+     0.9333333333333333
+    ],
+    "alerts_per_100h": [
+     29.345205104933328,
+     223.00062485081196
+    ],
+    "precision": [
+     0.872,
+     0.9813084112149533
+    ],
+    "f1": [
+     0.8571428571428571,
+     0.9350788696282257
+    ],
+    "median_delay_min": [
+     1.4471779114666667,
+     2.6095880804833333
+    ],
+    "subsystem_category": [
+     0.7053422619047619,
+     0.9423076923076923
+    ]
+   },
+   "model_101": {
+    "recall": [
+     0.075,
+     0.16666666666666666
+    ],
+    "alerts_per_100h": [
+     0.0,
+     0.0
+    ],
+    "precision": [
+     1.0,
+     1.0
+    ],
+    "f1": [
+     0.13953488372093023,
+     0.2857142857142857
+    ],
+    "median_delay_min": [
+     1.5228726528,
+     3.218481975466667
+    ],
+    "subsystem_category": [
+     1.0,
+     1.0
+    ]
+   },
+   "model_202": {
+    "recall": [
+     0.2833333333333333,
+     0.38333333333333336
+    ],
+    "alerts_per_100h": [
+     0.0,
+     0.0
+    ],
+    "precision": [
+     1.0,
+     1.0
+    ],
+    "f1": [
+     0.4415584415584416,
+     0.5542168674698795
+    ],
+    "median_delay_min": [
+     1.9839282112000003,
+     3.6068491264
+    ],
+    "subsystem_category": [
+     1.0,
+     1.0
+    ]
+   },
+   "model_303": {
+    "recall": [
+     0.041666666666666664,
+     0.10833333333333334
+    ],
+    "alerts_per_100h": [
+     0.0,
+     0.0
+    ],
+    "precision": [
+     1.0,
+     1.0
+    ],
+    "f1": [
+     0.07999999999999999,
+     0.19548872180451127
+    ],
+    "median_delay_min": [
+     1.2987685196166665,
+     2.9046040277333334
+    ],
+    "subsystem_category": [
+     1.0,
+     1.0
+    ]
+   }
+  },
+  "paired": {
+   "model_101_vs_rules": {
+    "recall": [
+     -0.15000000000000002,
+     -0.033333333333333354
+    ],
+    "alerts_per_100h": [
+     -48.50151619389099,
+     0.0
+    ],
+    "precision": [
+     0.0,
+     0.1071428571428571
+    ],
+    "f1": [
+     -0.2207982622861798,
+     -0.04829702671429292
+    ],
+    "median_delay_min": [
+     -2.156488960000001,
+     0.003198230346666991
+    ],
+    "subsystem_category": [
+     0.0,
+     0.0
+    ]
+   },
+   "model_202_vs_rules": {
+    "recall": [
+     0.07499999999999998,
+     0.175
+    ],
+    "alerts_per_100h": [
+     -48.50151619389099,
+     0.0
+    ],
+    "precision": [
+     0.0,
+     0.1071428571428571
+    ],
+    "f1": [
+     0.09800424628450105,
+     0.21356071209867888
+    ],
+    "median_delay_min": [
+     -1.6417817679999995,
+     0.3907646530666664
+    ],
+    "subsystem_category": [
+     0.0,
+     0.0
+    ]
+   },
+   "model_303_vs_rules": {
+    "recall": [
+     -0.18333333333333335,
+     -0.08333333333333334
+    ],
+    "alerts_per_100h": [
+     -48.50151619389099,
+     0.0
+    ],
+    "precision": [
+     0.0,
+     0.1071428571428571
+    ],
+    "f1": [
+     -0.2780952380952381,
+     -0.13114964500583812
+    ],
+    "median_delay_min": [
+     -2.4560664030500003,
+     -0.2776185457499998
+    ],
+    "subsystem_category": [
+     0.0,
+     0.0
+    ]
+   },
+   "robust_z_vs_rules": {
+    "recall": [
+     0.5833333333333333,
+     0.7333333333333334
+    ],
+    "alerts_per_100h": [
+     0.0,
+     214.1767575439512
+    ],
+    "precision": [
+     -0.1166666666666667,
+     0.06394461914744938
+    ],
+    "f1": [
+     0.49520373734984663,
+     0.6122692197138876
+    ],
+    "median_delay_min": [
+     -2.4589083893333337,
+     -0.6743557756499998
+    ],
+    "subsystem_category": [
+     -0.29465773809523804,
+     -0.05769230769230771
+    ]
+   },
+   "rules_vs_rules_per_episode": {
+    "recall": [
+     -0.18333333333333335,
+     -0.016666666666666663
+    ],
+    "alerts_per_100h": [
+     -185.42573623704672,
+     -14.363333462920224
+    ],
+    "precision": [
+     0.030303030303030276,
+     0.19048351648351644
+    ],
+    "f1": [
+     -0.18328493825600672,
+     -0.015592397713871007
+    ],
+    "median_delay_min": [
+     0.6343120209329167,
+     3.343279479626659
+    ],
+    "subsystem_category": [
+     0.0,
+     0.4444444444444444
+    ]
+   }
+  },
+  "attribution": {
+   "rules": {
+    "attributed_correctly": 25,
+    "detected_in_pair_run": 25,
+    "share": 1.0
+   },
+   "rules_per_episode": {
+    "attributed_correctly": 36,
+    "detected_in_pair_run": 36,
+    "share": 1.0
+   },
+   "robust_z": {
+    "attributed_correctly": 97,
+    "detected_in_pair_run": 104,
+    "share": 0.9326923076923077
+   },
+   "model_101": {
+    "attributed_correctly": 14,
+    "detected_in_pair_run": 14,
+    "share": 1.0
+   },
+   "model_202": {
+    "attributed_correctly": 40,
+    "detected_in_pair_run": 40,
+    "share": 1.0
+   },
+   "model_303": {
+    "attributed_correctly": 9,
+    "detected_in_pair_run": 9,
+    "share": 1.0
+   }
+  },
+  "paired_delay": {
+   "model_101_vs_rules": {
+    "n": 4,
+    "median_detector": 3.721992064,
+    "median_rules": 4.4512384768,
+    "detector_faster": 2,
+    "rules_faster": 1
+   },
+   "model_202_vs_rules": {
+    "n": 15,
+    "median_detector": 2.037862673066667,
+    "median_rules": 3.754834922666667,
+    "detector_faster": 11,
+    "rules_faster": 0
+   },
+   "model_303_vs_rules": {
+    "n": 0,
+    "median_detector": null,
+    "median_rules": null,
+    "detector_faster": 0,
+    "rules_faster": 0
+   },
+   "robust_z_vs_rules": {
+    "n": 24,
+    "median_detector": 1.9152610240000003,
+    "median_rules": 3.175234794533333,
+    "detector_faster": 23,
+    "rules_faster": 0
+   }
+  },
+  "calibration": {
+   "model_101": {
+    "brier": 0.2816891470393614,
+    "ece_10bin": 0.2881471404464735,
+    "episodes": 2800,
+    "fault_episodes": 906
+   },
+   "model_202": {
+    "brier": 0.2202119352501133,
+    "ece_10bin": 0.2342816777600342,
+    "episodes": 2800,
+    "fault_episodes": 906
+   },
+   "model_303": {
+    "brier": 0.30038645045067197,
+    "ece_10bin": 0.30147331052864673,
+    "episodes": 2800,
+    "fault_episodes": 906
+   }
+  },
+  "cost": {
+   "median_update_s": {
+    "rules": 8.92000098247081e-05,
+    "rules_per_episode": 7.229999755509198e-05,
+    "robust_z": 0.00013880000915378332,
+    "model_101": 0.01065639998705592,
+    "model_202": 0.004435499984538183,
+    "model_303": 0.010874300001887605
+   },
+   "measurement": {
+    "episodes_measured": 1306,
+    "seconds_total": 573.0460862998734,
+    "seconds_median": 0.24454680000781082,
+    "seconds_p95": 1.3124708249961259,
+    "wall_s": 1175.6502945423126
+   },
+   "one_trial": {
+    "rules": {
+     "seconds": 0.007173599995439872,
+     "peak_python_alloc_kb": 25.03
+    },
+    "rules_per_episode": {
+     "seconds": 0.005687600001692772,
+     "peak_python_alloc_kb": 22.941
+    },
+    "robust_z": {
+     "seconds": 0.008733599999686703,
+     "peak_python_alloc_kb": 20.692
+    },
+    "model_101": {
+     "seconds": 0.9642208000004757,
+     "peak_python_alloc_kb": 27.225
+    },
+    "model_202": {
+     "seconds": 0.3876272999914363,
+     "peak_python_alloc_kb": 27.089
+    },
+    "model_303": {
+     "seconds": 0.9680029999872204,
+     "peak_python_alloc_kb": 26.933
+    }
+   }
+  },
+  "thresholds": {
+   "robust_z": 3.0,
+   "model_101": 0.41,
+   "model_202": 0.39,
+   "model_303": 0.34
+  },
+  "by_fault": {
+   "rules": {
+    "camera": {
+     "detector": "rules",
+     "fault": "camera",
+     "n": 20.0,
+     "detected": 0.0,
+     "recall": 0.0,
+     "median_delay_min": NaN,
+     "strict_category": NaN,
+     "subsystem_category": NaN,
+     "insufficient": 0.0,
+     "masked": 0.0
+    },
+    "missing": {
+     "detector": "rules",
+     "fault": "missing",
+     "n": 20.0,
+     "detected": 0.0,
+     "recall": 0.0,
+     "median_delay_min": NaN,
+     "strict_category": NaN,
+     "subsystem_category": NaN,
+     "insufficient": 0.0,
+     "masked": 0.0
+    },
+    "recorder_pause": {
+     "detector": "rules",
+     "fault": "recorder_pause",
+     "n": 20.0,
+     "detected": 0.0,
+     "recall": 0.0,
+     "median_delay_min": NaN,
+     "strict_category": NaN,
+     "subsystem_category": NaN,
+     "insufficient": 0.0,
+     "masked": 0.0
+    },
+    "recorder_rate": {
+     "detector": "rules",
+     "fault": "recorder_rate",
+     "n": 20.0,
+     "detected": 8.0,
+     "recall": 0.4,
+     "median_delay_min": 3.077985,
+     "strict_category": 1.0,
+     "subsystem_category": 1.0,
+     "insufficient": 0.0,
+     "masked": 0.0
+    },
+    "sync_drift": {
+     "detector": "rules",
+     "fault": "sync_drift",
+     "n": 20.0,
+     "detected": 0.0,
+     "recall": 0.0,
+     "median_delay_min": NaN,
+     "strict_category": NaN,
+     "subsystem_category": NaN,
+     "insufficient": 0.0,
+     "masked": 0.0
+    },
+    "timing_delay": {
+     "detector": "rules",
+     "fault": "timing_delay",
+     "n": 20.0,
+     "detected": 17.0,
+     "recall": 0.85,
+     "median_delay_min": 3.754835,
+     "strict_category": 1.0,
+     "subsystem_category": 1.0,
+     "insufficient": 0.0,
+     "masked": 0.0
+    },
+    "all (persistent)": {
+     "detector": "rules",
+     "fault": "all (persistent)",
+     "n": 83.0,
+     "detected": 18.0,
+     "recall": 0.216867,
+     "median_delay_min": 3.175235,
+     "strict_category": 1.0,
+     "subsystem_category": 1.0,
+     "insufficient": 0.0,
+     "masked": 0.0
+    },
+    "all (intermittent)": {
+     "detector": "rules",
+     "fault": "all (intermittent)",
+     "n": 37.0,
+     "detected": 7.0,
+     "recall": 0.189189,
+     "median_delay_min": 5.291648,
+     "strict_category": 1.0,
+     "subsystem_category": 1.0,
+     "insufficient": 0.0,
+     "masked": 0.0
+    }
+   },
+   "rules_per_episode": {
+    "camera": {
+     "detector": "rules_per_episode",
+     "fault": "camera",
+     "n": 20.0,
+     "detected": 2.0,
+     "recall": 0.1,
+     "median_delay_min": 6.750832,
+     "strict_category": 0.0,
+     "subsystem_category": 0.0,
+     "insufficient": 0.0,
+     "masked": 0.0
+    },
+    "missing": {
+     "detector": "rules_per_episode",
+     "fault": "missing",
+     "n": 20.0,
+     "detected": 2.0,
+     "recall": 0.1,
+     "median_delay_min": 6.750832,
+     "strict_category": 0.0,
+     "subsystem_category": 0.0,
+     "insufficient": 0.0,
+     "masked": 0.0
+    },
+    "recorder_pause": {
+     "detector": "rules_per_episode",
+     "fault": "recorder_pause",
+     "n": 20.0,
+     "detected": 2.0,
+     "recall": 0.1,
+     "median_delay_min": 6.750832,
+     "strict_category": 0.5,
+     "subsystem_category": 0.5,
+     "insufficient": 0.0,
+     "masked": 0.0
+    },
+    "recorder_rate": {
+     "detector": "rules_per_episode",
+     "fault": "recorder_rate",
+     "n": 20.0,
+     "detected": 9.0,
+     "recall": 0.45,
+     "median_delay_min": 0.966501,
+     "strict_category": 0.888889,
+     "subsystem_category": 0.888889,
+     "insufficient": 0.0,
+     "masked": 0.0
+    },
+    "sync_drift": {
+     "detector": "rules_per_episode",
+     "fault": "sync_drift",
+     "n": 20.0,
+     "detected": 2.0,
+     "recall": 0.1,
+     "median_delay_min": 5.269571,
+     "strict_category": 0.0,
+     "subsystem_category": 0.0,
+     "insufficient": 0.0,
+     "masked": 0.0
+    },
+    "timing_delay": {
+     "detector": "rules_per_episode",
+     "fault": "timing_delay",
+     "n": 20.0,
+     "detected": 19.0,
+     "recall": 0.95,
+     "median_delay_min": 0.966501,
+     "strict_category": 1.0,
+     "subsystem_category": 1.0,
+     "insufficient": 0.0,
+     "masked": 1.0
+    },
+    "all (persistent)": {
+     "detector": "rules_per_episode",
+     "fault": "all (persistent)",
+     "n": 83.0,
+     "detected": 23.0,
+     "recall": 0.277108,
+     "median_delay_min": 1.084366,
+     "strict_category": 0.782609,
+     "subsystem_category": 0.782609,
+     "insufficient": 0.0,
+     "masked": 1.0
+    },
+    "all (intermittent)": {
+     "detector": "rules_per_episode",
+     "fault": "all (intermittent)",
+     "n": 37.0,
+     "detected": 13.0,
+     "recall": 0.351351,
+     "median_delay_min": 1.447178,
+     "strict_category": 0.769231,
+     "subsystem_category": 0.769231,
+     "insufficient": 0.0,
+     "masked": 0.0
+    }
+   },
+   "robust_z": {
+    "camera": {
+     "detector": "robust_z",
+     "fault": "camera",
+     "n": 20.0,
+     "detected": 19.0,
+     "recall": 0.95,
+     "median_delay_min": 1.77456,
+     "strict_category": 0.947368,
+     "subsystem_category": 0.947368,
+     "insufficient": 0.0,
+     "masked": 1.0
+    },
+    "missing": {
+     "detector": "robust_z",
+     "fault": "missing",
+     "n": 20.0,
+     "detected": 12.0,
+     "recall": 0.6,
+     "median_delay_min": 2.477127,
+     "strict_category": 0.666667,
+     "subsystem_category": 0.666667,
+     "insufficient": 0.0,
+     "masked": 0.0
+    },
+    "recorder_pause": {
+     "detector": "robust_z",
+     "fault": "recorder_pause",
+     "n": 20.0,
+     "detected": 20.0,
+     "recall": 1.0,
+     "median_delay_min": 1.941098,
+     "strict_category": 0.9,
+     "subsystem_category": 0.9,
+     "insufficient": 0.0,
+     "masked": 0.0
+    },
+    "recorder_rate": {
+     "detector": "robust_z",
+     "fault": "recorder_rate",
+     "n": 20.0,
+     "detected": 20.0,
+     "recall": 1.0,
+     "median_delay_min": 1.915261,
+     "strict_category": 0.95,
+     "subsystem_category": 0.95,
+     "insufficient": 0.0,
+     "masked": 0.0
+    },
+    "sync_drift": {
+     "detector": "robust_z",
+     "fault": "sync_drift",
+     "n": 20.0,
+     "detected": 14.0,
+     "recall": 0.7,
+     "median_delay_min": 1.915261,
+     "strict_category": 0.785714,
+     "subsystem_category": 0.857143,
+     "insufficient": 0.0,
+     "masked": 0.0
+    },
+    "timing_delay": {
+     "detector": "robust_z",
+     "fault": "timing_delay",
+     "n": 20.0,
+     "detected": 19.0,
+     "recall": 0.95,
+     "median_delay_min": 1.900528,
+     "strict_category": 0.631579,
+     "subsystem_category": 0.631579,
+     "insufficient": 0.0,
+     "masked": 0.0
+    },
+    "all (persistent)": {
+     "detector": "robust_z",
+     "fault": "all (persistent)",
+     "n": 83.0,
+     "detected": 74.0,
+     "recall": 0.891566,
+     "median_delay_min": 1.929994,
+     "strict_category": 0.837838,
+     "subsystem_category": 0.837838,
+     "insufficient": 0.0,
+     "masked": 1.0
+    },
+    "all (intermittent)": {
+     "detector": "robust_z",
+     "fault": "all (intermittent)",
+     "n": 37.0,
+     "detected": 30.0,
+     "recall": 0.810811,
+     "median_delay_min": 1.837544,
+     "strict_category": 0.8,
+     "subsystem_category": 0.833333,
+     "insufficient": 0.0,
+     "masked": 0.0
+    }
+   },
+   "model_101": {
+    "camera": {
+     "detector": "model_101",
+     "fault": "camera",
+     "n": 20.0,
+     "detected": 0.0,
+     "recall": 0.0,
+     "median_delay_min": NaN,
+     "strict_category": NaN,
+     "subsystem_category": NaN,
+     "insufficient": 0.0,
+     "masked": 0.0
+    },
+    "missing": {
+     "detector": "model_101",
+     "fault": "missing",
+     "n": 20.0,
+     "detected": 9.0,
+     "recall": 0.45,
+     "median_delay_min": 2.133046,
+     "strict_category": 1.0,
+     "subsystem_category": 1.0,
+     "insufficient": 0.0,
+     "masked": 0.0
+    },
+    "recorder_pause": {
+     "detector": "model_101",
+     "fault": "recorder_pause",
+     "n": 20.0,
+     "detected": 0.0,
+     "recall": 0.0,
+     "median_delay_min": NaN,
+     "strict_category": NaN,
+     "subsystem_category": NaN,
+     "insufficient": 0.0,
+     "masked": 0.0
+    },
+    "recorder_rate": {
+     "detector": "model_101",
+     "fault": "recorder_rate",
+     "n": 20.0,
+     "detected": 0.0,
+     "recall": 0.0,
+     "median_delay_min": NaN,
+     "strict_category": NaN,
+     "subsystem_category": NaN,
+     "insufficient": 0.0,
+     "masked": 0.0
+    },
+    "sync_drift": {
+     "detector": "model_101",
+     "fault": "sync_drift",
+     "n": 20.0,
+     "detected": 0.0,
+     "recall": 0.0,
+     "median_delay_min": NaN,
+     "strict_category": NaN,
+     "subsystem_category": NaN,
+     "insufficient": 0.0,
+     "masked": 0.0
+    },
+    "timing_delay": {
+     "detector": "model_101",
+     "fault": "timing_delay",
+     "n": 20.0,
+     "detected": 5.0,
+     "recall": 0.25,
+     "median_delay_min": 3.758393,
+     "strict_category": 1.0,
+     "subsystem_category": 1.0,
+     "insufficient": 0.0,
+     "masked": 0.0
+    },
+    "all (persistent)": {
+     "detector": "model_101",
+     "fault": "all (persistent)",
+     "n": 83.0,
+     "detected": 7.0,
+     "recall": 0.084337,
+     "median_delay_min": 2.244129,
+     "strict_category": 1.0,
+     "subsystem_category": 1.0,
+     "insufficient": 0.0,
+     "masked": 0.0
+    },
+    "all (intermittent)": {
+     "detector": "model_101",
+     "fault": "all (intermittent)",
+     "n": 37.0,
+     "detected": 7.0,
+     "recall": 0.189189,
+     "median_delay_min": 2.203141,
+     "strict_category": 1.0,
+     "subsystem_category": 1.0,
+     "insufficient": 0.0,
+     "masked": 0.0
+    }
+   },
+   "model_202": {
+    "camera": {
+     "detector": "model_202",
+     "fault": "camera",
+     "n": 20.0,
+     "detected": 0.0,
+     "recall": 0.0,
+     "median_delay_min": NaN,
+     "strict_category": NaN,
+     "subsystem_category": NaN,
+     "insufficient": 0.0,
+     "masked": 0.0
+    },
+    "missing": {
+     "detector": "model_202",
+     "fault": "missing",
+     "n": 20.0,
+     "detected": 9.0,
+     "recall": 0.45,
+     "median_delay_min": 2.133046,
+     "strict_category": 1.0,
+     "subsystem_category": 1.0,
+     "insufficient": 0.0,
+     "masked": 0.0
+    },
+    "recorder_pause": {
+     "detector": "model_202",
+     "fault": "recorder_pause",
+     "n": 20.0,
+     "detected": 14.0,
+     "recall": 0.7,
+     "median_delay_min": 4.20437,
+     "strict_category": 1.0,
+     "subsystem_category": 1.0,
+     "insufficient": 0.0,
+     "masked": 0.0
+    },
+    "recorder_rate": {
+     "detector": "model_202",
+     "fault": "recorder_rate",
+     "n": 20.0,
+     "detected": 0.0,
+     "recall": 0.0,
+     "median_delay_min": NaN,
+     "strict_category": NaN,
+     "subsystem_category": NaN,
+     "insufficient": 0.0,
+     "masked": 0.0
+    },
+    "sync_drift": {
+     "detector": "model_202",
+     "fault": "sync_drift",
+     "n": 20.0,
+     "detected": 0.0,
+     "recall": 0.0,
+     "median_delay_min": NaN,
+     "strict_category": NaN,
+     "subsystem_category": NaN,
+     "insufficient": 0.0,
+     "masked": 0.0
+    },
+    "timing_delay": {
+     "detector": "model_202",
+     "fault": "timing_delay",
+     "n": 20.0,
+     "detected": 17.0,
+     "recall": 0.85,
+     "median_delay_min": 2.203141,
+     "strict_category": 1.0,
+     "subsystem_category": 1.0,
+     "insufficient": 0.0,
+     "masked": 0.0
+    },
+    "all (persistent)": {
+     "detector": "model_202",
+     "fault": "all (persistent)",
+     "n": 83.0,
+     "detected": 30.0,
+     "recall": 0.361446,
+     "median_delay_min": 2.698575,
+     "strict_category": 1.0,
+     "subsystem_category": 1.0,
+     "insufficient": 0.0,
+     "masked": 0.0
+    },
+    "all (intermittent)": {
+     "detector": "model_202",
+     "fault": "all (intermittent)",
+     "n": 37.0,
+     "detected": 10.0,
+     "recall": 0.27027,
+     "median_delay_min": 2.96499,
+     "strict_category": 1.0,
+     "subsystem_category": 1.0,
+     "insufficient": 0.0,
+     "masked": 0.0
+    }
+   },
+   "model_303": {
+    "camera": {
+     "detector": "model_303",
+     "fault": "camera",
+     "n": 20.0,
+     "detected": 0.0,
+     "recall": 0.0,
+     "median_delay_min": NaN,
+     "strict_category": NaN,
+     "subsystem_category": NaN,
+     "insufficient": 0.0,
+     "masked": 0.0
+    },
+    "missing": {
+     "detector": "model_303",
+     "fault": "missing",
+     "n": 20.0,
+     "detected": 9.0,
+     "recall": 0.45,
+     "median_delay_min": 2.133046,
+     "strict_category": 1.0,
+     "subsystem_category": 1.0,
+     "insufficient": 0.0,
+     "masked": 0.0
+    },
+    "recorder_pause": {
+     "detector": "model_303",
+     "fault": "recorder_pause",
+     "n": 20.0,
+     "detected": 0.0,
+     "recall": 0.0,
+     "median_delay_min": NaN,
+     "strict_category": NaN,
+     "subsystem_category": NaN,
+     "insufficient": 0.0,
+     "masked": 0.0
+    },
+    "recorder_rate": {
+     "detector": "model_303",
+     "fault": "recorder_rate",
+     "n": 20.0,
+     "detected": 0.0,
+     "recall": 0.0,
+     "median_delay_min": NaN,
+     "strict_category": NaN,
+     "subsystem_category": NaN,
+     "insufficient": 0.0,
+     "masked": 0.0
+    },
+    "sync_drift": {
+     "detector": "model_303",
+     "fault": "sync_drift",
+     "n": 20.0,
+     "detected": 0.0,
+     "recall": 0.0,
+     "median_delay_min": NaN,
+     "strict_category": NaN,
+     "subsystem_category": NaN,
+     "insufficient": 0.0,
+     "masked": 0.0
+    },
+    "timing_delay": {
+     "detector": "model_303",
+     "fault": "timing_delay",
+     "n": 20.0,
+     "detected": 0.0,
+     "recall": 0.0,
+     "median_delay_min": NaN,
+     "strict_category": NaN,
+     "subsystem_category": NaN,
+     "insufficient": 0.0,
+     "masked": 0.0
+    },
+    "all (persistent)": {
+     "detector": "model_303",
+     "fault": "all (persistent)",
+     "n": 83.0,
+     "detected": 5.0,
+     "recall": 0.060241,
+     "median_delay_min": 2.244129,
+     "strict_category": 1.0,
+     "subsystem_category": 1.0,
+     "insufficient": 0.0,
+     "masked": 0.0
+    },
+    "all (intermittent)": {
+     "detector": "model_303",
+     "fault": "all (intermittent)",
+     "n": 37.0,
+     "detected": 4.0,
+     "recall": 0.108108,
+     "median_delay_min": 1.715907,
+     "strict_category": 1.0,
+     "subsystem_category": 1.0,
+     "insufficient": 0.0,
+     "masked": 0.0
+    }
+   }
+  },
+  "ablations": {
+   "camera": {
+    "rules": {
+     "recall": 0.208333,
+     "alerts_per_100h": 14.600664
+    },
+    "rules_per_episode": {
+     "recall": 0.3,
+     "alerts_per_100h": 102.204648
+    },
+    "robust_z": {
+     "recall": 0.608333,
+     "alerts_per_100h": 58.402656
+    },
+    "model_101": {
+     "recall": 0.216667,
+     "alerts_per_100h": 0.0
+    },
+    "model_202": {
+     "recall": 0.225,
+     "alerts_per_100h": 0.0
+    },
+    "model_303": {
+     "recall": 0.075,
+     "alerts_per_100h": 0.0
+    }
+   },
+   "timestamp": {
+    "rules": {
+     "recall": 0.141667,
+     "alerts_per_100h": 0.0
+    },
+    "rules_per_episode": {
+     "recall": 0.241667,
+     "alerts_per_100h": 58.402656
+    },
+    "robust_z": {
+     "recall": 0.708333,
+     "alerts_per_100h": 116.805312
+    },
+    "model_101": {
+     "recall": 0.075,
+     "alerts_per_100h": 0.0
+    },
+    "model_202": {
+     "recall": 0.075,
+     "alerts_per_100h": 0.0
+    },
+    "model_303": {
+     "recall": 0.075,
+     "alerts_per_100h": 0.0
+    }
+   },
+   "action_state": {
+    "rules": {
+     "recall": 0.066667,
+     "alerts_per_100h": 14.600664
+    },
+    "rules_per_episode": {
+     "recall": 0.108333,
+     "alerts_per_100h": 73.00332
+    },
+    "robust_z": {
+     "recall": 0.825,
+     "alerts_per_100h": 73.00332
+    },
+    "model_101": {
+     "recall": 0.075,
+     "alerts_per_100h": 0.0
+    },
+    "model_202": {
+     "recall": 0.175,
+     "alerts_per_100h": 0.0
+    },
+    "model_303": {
+     "recall": 0.075,
+     "alerts_per_100h": 0.0
+    }
+   }
+  },
+  "failure": {
+   "rules_misses": {
+    "camera": {
+     "absent_in_format": 20
+    },
+    "recorder_rate": {
+     "median_rate_ok": 12
+    },
+    "recorder_pause": {
+     "no_measurement": 20
+    },
+    "sync_drift": {
+     "absent_in_format": 20
+    },
+    "missing": {
+     "no_measurement": 20
+    },
+    "timing_delay": {
+     "below_margin": 3
+    }
+   },
+   "model": {
+    "101": {
+     "camera": {
+      "mean_p_faulty": 0.017309857883148216,
+      "mean_p_unaffected": 0.01077538262689106,
+      "threshold": 0.41
+     },
+     "control": {
+      "mean_p_faulty": null,
+      "mean_p_unaffected": 0.009733434738967884,
+      "threshold": 0.41
+     },
+     "missing": {
+      "mean_p_faulty": 0.4388444651854912,
+      "mean_p_unaffected": 0.008997272868953727,
+      "threshold": 0.41
+     },
+     "recorder_pause": {
+      "mean_p_faulty": 0.015018460101666955,
+      "mean_p_unaffected": 0.00896078278929012,
+      "threshold": 0.41
+     },
+     "recorder_rate": {
+      "mean_p_faulty": 0.008571501548193734,
+      "mean_p_unaffected": 0.010804838601689633,
+      "threshold": 0.41
+     },
+     "sync_drift": {
+      "mean_p_faulty": 0.009644092823572061,
+      "mean_p_unaffected": 0.010653004783399825,
+      "threshold": 0.41
+     },
+     "timing_delay": {
+      "mean_p_faulty": 0.21814117520725465,
+      "mean_p_unaffected": 0.009031743285997675,
+      "threshold": 0.41
+     }
+    },
+    "202": {
+     "camera": {
+      "mean_p_faulty": 0.039524515078292764,
+      "mean_p_unaffected": 0.018839334426155943,
+      "threshold": 0.39
+     },
+     "control": {
+      "mean_p_faulty": null,
+      "mean_p_unaffected": 0.018615882843040152,
+      "threshold": 0.39
+     },
+     "missing": {
+      "mean_p_faulty": 0.4451654916581312,
+      "mean_p_unaffected": 0.016123566242952265,
+      "threshold": 0.39
+     },
+     "recorder_pause": {
+      "mean_p_faulty": 0.3620265874381369,
+      "mean_p_unaffected": 0.015990619945122166,
+      "threshold": 0.39
+     },
+     "recorder_rate": {
+      "mean_p_faulty": 0.05270477616831389,
+      "mean_p_unaffected": 0.01944358600650278,
+      "threshold": 0.39
+     },
+     "sync_drift": {
+      "mean_p_faulty": 0.02095142699797866,
+      "mean_p_unaffected": 0.018864940082636113,
+      "threshold": 0.39
+     },
+     "timing_delay": {
+      "mean_p_faulty": 0.5800987688630432,
+      "mean_p_unaffected": 0.01609512967670143,
+      "threshold": 0.39
+     }
+    },
+    "303": {
+     "camera": {
+      "mean_p_faulty": 4.8661325454365825e-06,
+      "mean_p_unaffected": 5.516943832080593e-08,
+      "threshold": 0.34
+     },
+     "control": {
+      "mean_p_faulty": null,
+      "mean_p_unaffected": 1.1756851060890084e-07,
+      "threshold": 0.34
+     },
+     "missing": {
+      "mean_p_faulty": 0.4065911227381483,
+      "mean_p_unaffected": 5.351299634597813e-08,
+      "threshold": 0.34
+     },
+     "recorder_pause": {
+      "mean_p_faulty": 0.0004390600365275951,
+      "mean_p_unaffected": 5.336038982025468e-08,
+      "threshold": 0.34
+     },
+     "recorder_rate": {
+      "mean_p_faulty": 2.510344478508766e-06,
+      "mean_p_unaffected": 5.4871238592410534e-08,
+      "threshold": 0.34
+     },
+     "sync_drift": {
+      "mean_p_faulty": 2.7193299655885957e-07,
+      "mean_p_unaffected": 5.303896714317288e-08,
+      "threshold": 0.34
+     },
+     "timing_delay": {
+      "mean_p_faulty": 3.474716091957901e-05,
+      "mean_p_unaffected": 5.369326077481017e-08,
+      "threshold": 0.34
+     }
+    }
+   }
+  },
+  "unmodified_alerts": {
+   "robust_z": {
+    "alerts": 8,
+    "documented": 6,
+    "no_documented_counterpart": 2
+   },
+   "rules_per_episode": {
+    "alerts": 7,
+    "documented": 5,
+    "no_documented_counterpart": 2
+   },
+   "rules": {
+    "alerts": 1,
+    "documented": 1,
+    "no_documented_counterpart": 0
+   }
+  },
+  "unmodified_alert_list": [
+   {
+    "detector": "robust_z",
+    "station": "Proxy 2",
+    "date": "2026-05-16",
+    "category": "sync",
+    "top_measurement": "cam_offset_max_s",
+    "adjudication": "documented",
+    "reference": "deliverables/xdof_proof/README.md section 7: two eval episodes on 2026-05-16 lost their cameras for seconds (episode listed)"
+   },
+   {
+    "detector": "robust_z",
+    "station": "Proxy 2",
+    "date": "2026-05-16",
+    "category": "camera",
+    "top_measurement": "cam_dropped_pct_max",
+    "adjudication": "documented",
+    "reference": "deliverables/xdof_proof/README.md section 7: two eval episodes on 2026-05-16 lost their cameras for seconds (episode listed)"
+   },
+   {
+    "detector": "rules_per_episode",
+    "station": "Proxy 2",
+    "date": "2026-05-27",
+    "category": "timing",
+    "top_measurement": null,
+    "adjudication": "no documented counterpart",
+    "reference": null
+   },
+   {
+    "detector": "rules_per_episode",
+    "station": "Proxy 2",
+    "date": "2026-06-01",
+    "category": "timing",
+    "top_measurement": null,
+    "adjudication": "no documented counterpart",
+    "reference": null
+   },
+   {
+    "detector": "robust_z",
+    "station": "Proxy 3",
+    "date": "2025-05-21",
+    "category": "camera",
+    "top_measurement": "cam_dropped_pct_max",
+    "adjudication": "documented",
+    "reference": "deliverables/xdof_proof/README.md section 3: the recorder was overloaded the week of 2025-05-21 to 28 (episode listed)"
+   },
+   {
+    "detector": "rules_per_episode",
+    "station": "Proxy 3",
+    "date": "2025-05-21",
+    "category": "recorder",
+    "top_measurement": null,
+    "adjudication": "documented",
+    "reference": "deliverables/xdof_proof/README.md section 3: the recorder was overloaded the week of 2025-05-21 to 28 (episode listed)"
+   },
+   {
+    "detector": "rules_per_episode",
+    "station": "Proxy 3",
+    "date": "2025-05-23",
+    "category": "recorder",
+    "top_measurement": null,
+    "adjudication": "documented",
+    "reference": "deliverables/xdof_proof/README.md section 3: the recorder was overloaded the week of 2025-05-21 to 28 (episode listed)"
+   },
+   {
+    "detector": "rules",
+    "station": "Proxy 3",
+    "date": "2025-05-28",
+    "category": "recorder",
+    "top_measurement": null,
+    "adjudication": "documented",
+    "reference": "deliverables/xdof_proof/README.md section 3: the recorder was overloaded the week of 2025-05-21 to 28 (episode listed)"
+   },
+   {
+    "detector": "rules_per_episode",
+    "station": "Proxy 3",
+    "date": "2025-05-24",
+    "category": "recorder",
+    "top_measurement": null,
+    "adjudication": "documented",
+    "reference": "deliverables/xdof_proof/README.md section 3: the recorder was overloaded the week of 2025-05-21 to 28 (episode listed)"
+   },
+   {
+    "detector": "rules_per_episode",
+    "station": "Proxy 3",
+    "date": "2025-05-27",
+    "category": "recorder",
+    "top_measurement": null,
+    "adjudication": "documented",
+    "reference": "deliverables/xdof_proof/README.md section 3: the recorder was overloaded the week of 2025-05-21 to 28 (episode listed)"
+   },
+   {
+    "detector": "robust_z",
+    "station": "Proxy 3",
+    "date": "2025-08-30",
+    "category": "camera",
+    "top_measurement": "cam_dropped_pct_max",
+    "adjudication": "no documented counterpart",
+    "reference": null
+   },
+   {
+    "detector": "robust_z",
+    "station": "Proxy 4",
+    "date": "2025-06-07",
+    "category": "timing",
+    "top_measurement": "delay_ms",
+    "adjudication": "no documented counterpart",
+    "reference": null
+   },
+   {
+    "detector": "rules_per_episode",
+    "station": "Proxy 4",
+    "date": "2025-05-23",
+    "category": "recorder",
+    "top_measurement": null,
+    "adjudication": "documented",
+    "reference": "deliverables/xdof_proof/README.md section 3: the recorder was overloaded the week of 2025-05-21 to 28 (episode listed)"
+   },
+   {
+    "detector": "robust_z",
+    "station": "Proxy 4",
+    "date": "2025-07-08",
+    "category": "timing",
+    "top_measurement": "delay_ms",
+    "adjudication": "documented",
+    "reference": "deliverables/xdof_proof/README.md section 1: train/val lag stepped from 151 to 188.5 ms between 2025-07-02 and 2025-07-04"
+   },
+   {
+    "detector": "robust_z",
+    "station": "Proxy 4",
+    "date": "2025-07-08",
+    "category": "camera",
+    "top_measurement": "cam_dropped_pct_max",
+    "adjudication": "documented",
+    "reference": "deliverables/xdof_proof/README.md smaller notes: station days 2025-07-08 and 2025-07-15 drop 3% of frames against 1% elsewhere"
+   },
+   {
+    "detector": "robust_z",
+    "station": "Proxy 4",
+    "date": "2025-07-26",
+    "category": "timing",
+    "top_measurement": "delay_ms",
+    "adjudication": "documented",
+    "reference": "deliverables/xdof_proof/README.md section 1: train/val lag stepped from 151 to 188.5 ms between 2025-07-02 and 2025-07-04"
+   }
+  ]
+ },
+ "decision": {
+  "rule": "better than the rules = paired 95% interval of (recall - rules recall) above zero AND alerts per 100 station-hours on unmodified recordings not higher than the rules' (point estimate, or a paired interval that includes zero)",
+  "detectors": {
+   "model_101": {
+    "recall": 0.11666666666666667,
+    "rules_recall": 0.20833333333333334,
+    "recall_diff_ci95": [
+     -0.15000000000000002,
+     -0.033333333333333354
+    ],
+    "alerts_per_100h": 0.0,
+    "rules_alerts_per_100h": 14.600664013839271,
+    "alerts_diff_ci95": [
+     -48.50151619389099,
+     0.0
+    ],
+    "recall_better": false,
+    "alert_rate_ok": true,
+    "better_than_rules": false
+   },
+   "model_202": {
+    "recall": 0.3333333333333333,
+    "rules_recall": 0.20833333333333334,
+    "recall_diff_ci95": [
+     0.07499999999999998,
+     0.175
+    ],
+    "alerts_per_100h": 0.0,
+    "rules_alerts_per_100h": 14.600664013839271,
+    "alerts_diff_ci95": [
+     -48.50151619389099,
+     0.0
+    ],
+    "recall_better": true,
+    "alert_rate_ok": true,
+    "better_than_rules": true
+   },
+   "model_303": {
+    "recall": 0.075,
+    "rules_recall": 0.20833333333333334,
+    "recall_diff_ci95": [
+     -0.18333333333333335,
+     -0.08333333333333334
+    ],
+    "alerts_per_100h": 0.0,
+    "rules_alerts_per_100h": 14.600664013839271,
+    "alerts_diff_ci95": [
+     -48.50151619389099,
+     0.0
+    ],
+    "recall_better": false,
+    "alert_rate_ok": true,
+    "better_than_rules": false
+   },
+   "robust_z": {
+    "recall": 0.8666666666666667,
+    "rules_recall": 0.20833333333333334,
+    "recall_diff_ci95": [
+     0.5833333333333333,
+     0.7333333333333334
+    ],
+    "alerts_per_100h": 116.80531211071417,
+    "rules_alerts_per_100h": 14.600664013839271,
+    "alerts_diff_ci95": [
+     0.0,
+     214.1767575439512
+    ],
+    "recall_better": true,
+    "alert_rate_ok": true,
+    "better_than_rules": true
+   }
+  },
+  "model_better_all_draws": false,
+  "model_better_any_draw": true,
+  "robust_z_better": true
+ },
+ "dev_reference": {
+  "point": {
+   "rules": {
+    "n_fault_trials": 408,
+    "n_control_trials": 68,
+    "detected": 119,
+    "recall": 0.2916666666666667,
+    "control_events": 76,
+    "control_hours": 45.53448374194893,
+    "alerts_per_100h": 166.906471215758,
+    "precision": 0.6102564102564103,
+    "f1": 0.39469320066334995,
+    "median_delay_min": 8.113329650383093,
+    "median_episodes_to_alert": 3.0,
+    "masked": 256,
+    "strict_category": 0.5378151260504201,
+    "subsystem_category": 0.680672268907563,
+    "insufficient": 0,
+    "unknown_category": 16
+   },
+   "rules_per_episode": {
+    "n_fault_trials": 408,
+    "n_control_trials": 68,
+    "detected": 265,
+    "recall": 0.6495098039215687,
+    "control_events": 177,
+    "control_hours": 45.53448374194893,
+    "alerts_per_100h": 388.71638691038373,
+    "precision": 0.5995475113122172,
+    "f1": 0.6235294117647059,
+    "median_delay_min": 3.342433471750216,
+    "median_episodes_to_alert": 2.0,
+    "masked": 125,
+    "strict_category": 0.4,
+    "subsystem_category": 0.5471698113207547,
+    "insufficient": 0,
+    "unknown_category": 0
+   },
+   "robust_z": {
+    "n_fault_trials": 408,
+    "n_control_trials": 68,
+    "detected": 352,
+    "recall": 0.8627450980392157,
+    "control_events": 70,
+    "control_hours": 45.53448374194893,
+    "alerts_per_100h": 153.72964454082972,
+    "precision": 0.8341232227488151,
+    "f1": 0.8481927710843374,
+    "median_delay_min": 3.9919784186873586,
+    "median_episodes_to_alert": 2.0,
+    "masked": 21,
+    "strict_category": 0.6306818181818182,
+    "subsystem_category": 0.7755681818181818,
+    "insufficient": 0,
+    "unknown_category": 0
+   }
+  }
+ },
+ "training": {
+  "target_alerts_per_100h": 166.906471215758,
+  "robust_z_threshold": 3.0,
+  "hardware": "CPU only; no GPU used for training",
+  "platform": "Windows-10-10.0.22000-SP0",
+  "processor": "Intel64 Family 6 Model 167 Stepping 1, GenuineIntel",
+  "draws": {
+   "101": {
+    "selected": {
+     "family": "hgb",
+     "max_depth": 3,
+     "max_iter": 300
+    },
+    "selected_text": "gradient-boosted trees, depth 3, 300 iterations",
+    "threshold": 0.41,
+    "features_text": "`abs:rec_ratio`, `abs:dt_p95_ratio`, `abs:gaps_per_min`, `abs:max_gap_s`, `abs:hidden_per_min`, `abs:cam_new_ratio`, `abs:stale_share`, `abs:age_p95_max_ms`, `abs:cam_rate_ratio_min`, `abs:cam_dropped_pct_max`, `abs:cam_offset_max_s`, `abs:n_cams`, `abs:has_action`, `abs:delay_ms`, `abs:row_minus_dispatch_ms`, `abs:missing_count`, `rel:rec_ratio`, `rel:dt_p95_ratio`, `rel:gaps_per_min`, `rel:max_gap_s`, `rel:hidden_per_min`, `rel:cam_new_ratio`, `rel:stale_share`, `rel:age_p95_max_ms`, `rel:cam_rate_ratio_min`, `rel:cam_dropped_pct_max`, `rel:cam_offset_max_s`, `rel:n_cams`, `rel:delay_ms`, `rel:row_minus_dispatch_ms`, `rel:missing_count`",
+    "n_features": 31,
+    "oof_recall": 0.9338235294117647,
+    "fit_seconds": 3.77,
+    "peak_python_alloc_mb": 6.5,
+    "train_episodes": 9520,
+    "train_positive": 3006,
+    "class_counts": {
+     "none": 6514,
+     "camera": 504,
+     "recorder": 1010,
+     "timing": 502,
+     "sync": 497,
+     "missing": 493
+    },
+    "artifact_sha256": "344805e09a52fc982b0dbb8bd7d79403796579d61b8b2837fd320100154b90ef",
+    "cv": [
+     {
+      "config": {
+       "family": "logreg",
+       "C": 0.1
+      },
+      "oof_threshold": 0.27,
+      "oof_recall": 0.8480392156862745,
+      "seconds": 1.2
+     },
+     {
+      "config": {
+       "family": "logreg",
+       "C": 1.0
+      },
+      "oof_threshold": 0.27,
+      "oof_recall": 0.8480392156862745,
+      "seconds": 1.2
+     },
+     {
+      "config": {
+       "family": "logreg",
+       "C": 10.0
+      },
+      "oof_threshold": 0.28,
+      "oof_recall": 0.8504901960784313,
+      "seconds": 1.9
+     },
+     {
+      "config": {
+       "family": "hgb",
+       "max_depth": 3,
+       "max_iter": 100
+      },
+      "oof_threshold": 0.42,
+      "oof_recall": 0.9240196078431373,
+      "seconds": 2.0
+     },
+     {
+      "config": {
+       "family": "hgb",
+       "max_depth": 3,
+       "max_iter": 300
+      },
+      "oof_threshold": 0.41,
+      "oof_recall": 0.9338235294117647,
+      "seconds": 4.5
+     },
+     {
+      "config": {
+       "family": "hgb",
+       "max_depth": null,
+       "max_iter": 100
+      },
+      "oof_threshold": 0.39,
+      "oof_recall": 0.9313725490196079,
+      "seconds": 5.3
+     },
+     {
+      "config": {
+       "family": "hgb",
+       "max_depth": null,
+       "max_iter": 300
+      },
+      "oof_threshold": 0.34,
+      "oof_recall": 0.9264705882352942,
+      "seconds": 10.2
+     }
+    ]
+   },
+   "202": {
+    "selected": {
+     "family": "hgb",
+     "max_depth": 3,
+     "max_iter": 100
+    },
+    "selected_text": "gradient-boosted trees, depth 3, 100 iterations",
+    "threshold": 0.39,
+    "features_text": "`abs:rec_ratio`, `abs:dt_p95_ratio`, `abs:gaps_per_min`, `abs:max_gap_s`, `abs:hidden_per_min`, `abs:cam_new_ratio`, `abs:stale_share`, `abs:age_p95_max_ms`, `abs:cam_rate_ratio_min`, `abs:cam_dropped_pct_max`, `abs:cam_offset_max_s`, `abs:n_cams`, `abs:has_action`, `abs:delay_ms`, `abs:row_minus_dispatch_ms`, `abs:missing_count`, `rel:rec_ratio`, `rel:dt_p95_ratio`, `rel:gaps_per_min`, `rel:max_gap_s`, `rel:hidden_per_min`, `rel:cam_new_ratio`, `rel:stale_share`, `rel:age_p95_max_ms`, `rel:cam_rate_ratio_min`, `rel:cam_dropped_pct_max`, `rel:cam_offset_max_s`, `rel:n_cams`, `rel:delay_ms`, `rel:row_minus_dispatch_ms`, `rel:missing_count`",
+    "n_features": 31,
+    "oof_recall": 0.9338235294117647,
+    "fit_seconds": 1.3,
+    "peak_python_alloc_mb": 5.1,
+    "train_episodes": 9520,
+    "train_positive": 3008,
+    "class_counts": {
+     "none": 6512,
+     "camera": 525,
+     "recorder": 1007,
+     "timing": 509,
+     "sync": 486,
+     "missing": 481
+    },
+    "artifact_sha256": "3130d629266dcafc76003ecc2e270cb0bbb41e75b03d6cd2fa1d3a3f50265f02",
+    "cv": [
+     {
+      "config": {
+       "family": "logreg",
+       "C": 0.1
+      },
+      "oof_threshold": 0.25,
+      "oof_recall": 0.8406862745098039,
+      "seconds": 1.0
+     },
+     {
+      "config": {
+       "family": "logreg",
+       "C": 1.0
+      },
+      "oof_threshold": 0.23,
+      "oof_recall": 0.8480392156862745,
+      "seconds": 1.2
+     },
+     {
+      "config": {
+       "family": "logreg",
+       "C": 10.0
+      },
+      "oof_threshold": 0.21,
+      "oof_recall": 0.8137254901960784,
+      "seconds": 2.0
+     },
+     {
+      "config": {
+       "family": "hgb",
+       "max_depth": 3,
+       "max_iter": 100
+      },
+      "oof_threshold": 0.39,
+      "oof_recall": 0.9338235294117647,
+      "seconds": 2.0
+     },
+     {
+      "config": {
+       "family": "hgb",
+       "max_depth": 3,
+       "max_iter": 300
+      },
+      "oof_threshold": 0.42,
+      "oof_recall": 0.9215686274509803,
+      "seconds": 4.6
+     },
+     {
+      "config": {
+       "family": "hgb",
+       "max_depth": null,
+       "max_iter": 100
+      },
+      "oof_threshold": 0.35,
+      "oof_recall": 0.9313725490196079,
+      "seconds": 5.3
+     },
+     {
+      "config": {
+       "family": "hgb",
+       "max_depth": null,
+       "max_iter": 300
+      },
+      "oof_threshold": 0.34,
+      "oof_recall": 0.9338235294117647,
+      "seconds": 10.3
+     }
+    ]
+   },
+   "303": {
+    "selected": {
+     "family": "hgb",
+     "max_depth": null,
+     "max_iter": 300
+    },
+    "selected_text": "gradient-boosted trees, unlimited depth, 300 iterations",
+    "threshold": 0.34,
+    "features_text": "`abs:rec_ratio`, `abs:dt_p95_ratio`, `abs:gaps_per_min`, `abs:max_gap_s`, `abs:hidden_per_min`, `abs:cam_new_ratio`, `abs:stale_share`, `abs:age_p95_max_ms`, `abs:cam_rate_ratio_min`, `abs:cam_dropped_pct_max`, `abs:cam_offset_max_s`, `abs:n_cams`, `abs:has_action`, `abs:delay_ms`, `abs:row_minus_dispatch_ms`, `abs:missing_count`, `rel:rec_ratio`, `rel:dt_p95_ratio`, `rel:gaps_per_min`, `rel:max_gap_s`, `rel:hidden_per_min`, `rel:cam_new_ratio`, `rel:stale_share`, `rel:age_p95_max_ms`, `rel:cam_rate_ratio_min`, `rel:cam_dropped_pct_max`, `rel:cam_offset_max_s`, `rel:n_cams`, `rel:delay_ms`, `rel:row_minus_dispatch_ms`, `rel:missing_count`",
+    "n_features": 31,
+    "oof_recall": 0.9436274509803921,
+    "fit_seconds": 10.57,
+    "peak_python_alloc_mb": 10.1,
+    "train_episodes": 9520,
+    "train_positive": 3044,
+    "class_counts": {
+     "none": 6476,
+     "camera": 526,
+     "recorder": 985,
+     "timing": 507,
+     "sync": 507,
+     "missing": 519
+    },
+    "artifact_sha256": "9a6f30049bb6039387ffe3422e16a6a2a8c91daa7e35bfd1ab17e4a5717be6ac",
+    "cv": [
+     {
+      "config": {
+       "family": "logreg",
+       "C": 0.1
+      },
+      "oof_threshold": 0.28,
+      "oof_recall": 0.8431372549019608,
+      "seconds": 1.0
+     },
+     {
+      "config": {
+       "family": "logreg",
+       "C": 1.0
+      },
+      "oof_threshold": 0.25,
+      "oof_recall": 0.8406862745098039,
+      "seconds": 1.3
+     },
+     {
+      "config": {
+       "family": "logreg",
+       "C": 10.0
+      },
+      "oof_threshold": 0.22,
+      "oof_recall": 0.8235294117647058,
+      "seconds": 2.1
+     },
+     {
+      "config": {
+       "family": "hgb",
+       "max_depth": 3,
+       "max_iter": 100
+      },
+      "oof_threshold": 0.45,
+      "oof_recall": 0.928921568627451,
+      "seconds": 2.1
+     },
+     {
+      "config": {
+       "family": "hgb",
+       "max_depth": 3,
+       "max_iter": 300
+      },
+      "oof_threshold": 0.43,
+      "oof_recall": 0.9166666666666666,
+      "seconds": 4.6
+     },
+     {
+      "config": {
+       "family": "hgb",
+       "max_depth": null,
+       "max_iter": 100
+      },
+      "oof_threshold": 0.35,
+      "oof_recall": 0.9338235294117647,
+      "seconds": 5.4
+     },
+     {
+      "config": {
+       "family": "hgb",
+       "max_depth": null,
+       "max_iter": 300
+      },
+      "oof_threshold": 0.34,
+      "oof_recall": 0.9436274509803921,
+      "seconds": 10.3
+     }
+    ]
+   }
+  }
+ },
+ "retrospective": {
+  "team": {
+   "station_a": {
+    "episodes": 600,
+    "hours": 21.49,
+    "rules": {
+     "alert_events": 21,
+     "alert_events_per_100h": 97.74,
+     "share_of_episodes_in_alert": 0.407,
+     "events_by_category": {
+      "motion": 3,
+      "camera": 16,
+      "recorder": 2
+     }
+    },
+    "rules_per_episode": {
+     "alert_events": 86,
+     "alert_events_per_100h": 400.25,
+     "share_of_episodes_in_alert": 0.37,
+     "events_by_category": {
+      "timing": 12,
+      "motion": 1,
+      "camera": 49,
+      "recorder": 24
+     }
+    },
+    "robust_z": {
+     "alert_events": 33,
+     "alert_events_per_100h": 153.59,
+     "share_of_episodes_in_alert": 0.785,
+     "events_by_category": {
+      "recorder": 18,
+      "timing": 8,
+      "camera": 7
+     }
+    },
+    "recorder_flag": {
+     "alert_events": 3,
+     "alert_events_per_100h": 13.96,
+     "share_of_episodes_in_alert": 0.19,
+     "events_by_category": {
+      "recorder flag": 3
+     }
+    },
+    "model_101": {
+     "alert_events": 21,
+     "alert_events_per_100h": 97.74,
+     "share_of_episodes_in_alert": 0.32,
+     "events_by_category": {
+      "timing": 1,
+      "recorder": 10,
+      "sync": 10
+     }
+    },
+    "model_202": {
+     "alert_events": 31,
+     "alert_events_per_100h": 144.28,
+     "share_of_episodes_in_alert": 0.22,
+     "events_by_category": {
+      "recorder": 13,
+      "camera": 7,
+      "sync": 11
+     }
+    },
+    "model_303": {
+     "alert_events": 14,
+     "alert_events_per_100h": 65.16,
+     "share_of_episodes_in_alert": 0.322,
+     "events_by_category": {
+      "insufficient evidence": 1,
+      "recorder": 5,
+      "timing": 4,
+      "sync": 4
+     }
+    }
+   },
+   "station_b": {
+    "episodes": 760,
+    "hours": 24.05,
+    "rules": {
+     "alert_events": 3,
+     "alert_events_per_100h": 12.47,
+     "share_of_episodes_in_alert": 0.992,
+     "events_by_category": {
+      "camera": 2,
+      "motion": 1
+     }
+    },
+    "rules_per_episode": {
+     "alert_events": 51,
+     "alert_events_per_100h": 212.07,
+     "share_of_episodes_in_alert": 0.916,
+     "events_by_category": {
+      "camera": 49,
+      "motion": 2
+     }
+    },
+    "robust_z": {
+     "alert_events": 62,
+     "alert_events_per_100h": 257.82,
+     "share_of_episodes_in_alert": 0.247,
+     "events_by_category": {
+      "recorder": 62
+     }
+    },
+    "recorder_flag": {
+     "alert_events": 16,
+     "alert_events_per_100h": 66.53,
+     "share_of_episodes_in_alert": 0.946,
+     "events_by_category": {
+      "recorder flag": 16
+     }
+    },
+    "model_101": {
+     "alert_events": 2,
+     "alert_events_per_100h": 8.32,
+     "share_of_episodes_in_alert": 0.005,
+     "events_by_category": {
+      "recorder": 2
+     }
+    },
+    "model_202": {
+     "alert_events": 4,
+     "alert_events_per_100h": 16.63,
+     "share_of_episodes_in_alert": 0.005,
+     "events_by_category": {
+      "camera": 4
+     }
+    },
+    "model_303": {
+     "alert_events": 3,
+     "alert_events_per_100h": 12.47,
+     "share_of_episodes_in_alert": 0.007,
+     "events_by_category": {
+      "recorder": 2,
+      "sync": 1
+     }
+    }
+   }
+  },
+  "xdof": {
+   "proxy_1": {
+    "episodes": 100,
+    "hours": 1.33,
+    "rules": {
+     "alert_events": 0,
+     "alert_events_per_100h": 0.0,
+     "share_of_episodes_in_alert": 0.0,
+     "events_by_category": {}
+    },
+    "rules_per_episode": {
+     "alert_events": 0,
+     "alert_events_per_100h": 0.0,
+     "share_of_episodes_in_alert": 0.0,
+     "events_by_category": {}
+    },
+    "robust_z": {
+     "alert_events": 0,
+     "alert_events_per_100h": 0.0,
+     "share_of_episodes_in_alert": 0.0,
+     "events_by_category": {}
+    },
+    "recorder_flag": {
+     "alert_events": 0,
+     "alert_events_per_100h": 0.0,
+     "share_of_episodes_in_alert": 0.0,
+     "events_by_category": {}
+    },
+    "model_101": {
+     "alert_events": 0,
+     "alert_events_per_100h": 0.0,
+     "share_of_episodes_in_alert": 0.0,
+     "events_by_category": {}
+    },
+    "model_202": {
+     "alert_events": 0,
+     "alert_events_per_100h": 0.0,
+     "share_of_episodes_in_alert": 0.0,
+     "events_by_category": {}
+    },
+    "model_303": {
+     "alert_events": 0,
+     "alert_events_per_100h": 0.0,
+     "share_of_episodes_in_alert": 0.0,
+     "events_by_category": {}
+    }
+   },
+   "proxy_2": {
+    "episodes": 40,
+    "hours": 0.93,
+    "rules": {
+     "alert_events": 0,
+     "alert_events_per_100h": 0.0,
+     "share_of_episodes_in_alert": 0.0,
+     "events_by_category": {}
+    },
+    "rules_per_episode": {
+     "alert_events": 4,
+     "alert_events_per_100h": 430.08,
+     "share_of_episodes_in_alert": 0.15,
+     "events_by_category": {
+      "timing": 4
+     }
+    },
+    "robust_z": {
+     "alert_events": 4,
+     "alert_events_per_100h": 430.08,
+     "share_of_episodes_in_alert": 0.175,
+     "events_by_category": {
+      "sync": 2,
+      "camera": 1,
+      "recorder": 1
+     }
+    },
+    "recorder_flag": {
+     "alert_events": 0,
+     "alert_events_per_100h": 0.0,
+     "share_of_episodes_in_alert": 0.0,
+     "events_by_category": {}
+    },
+    "model_101": {
+     "alert_events": 1,
+     "alert_events_per_100h": 107.52,
+     "share_of_episodes_in_alert": 0.05,
+     "events_by_category": {
+      "timing": 1
+     }
+    },
+    "model_202": {
+     "alert_events": 1,
+     "alert_events_per_100h": 107.52,
+     "share_of_episodes_in_alert": 0.075,
+     "events_by_category": {
+      "timing": 1
+     }
+    },
+    "model_303": {
+     "alert_events": 0,
+     "alert_events_per_100h": 0.0,
+     "share_of_episodes_in_alert": 0.0,
+     "events_by_category": {}
+    }
+   },
+   "proxy_3": {
+    "episodes": 200,
+    "hours": 3.7,
+    "rules": {
+     "alert_events": 6,
+     "alert_events_per_100h": 162.28,
+     "share_of_episodes_in_alert": 0.055,
+     "events_by_category": {
+      "recorder": 2,
+      "timing": 4
+     }
+    },
+    "rules_per_episode": {
+     "alert_events": 33,
+     "alert_events_per_100h": 892.52,
+     "share_of_episodes_in_alert": 0.275,
+     "events_by_category": {
+      "motion": 2,
+      "recorder": 3,
+      "timing": 28
+     }
+    },
+    "robust_z": {
+     "alert_events": 11,
+     "alert_events_per_100h": 297.51,
+     "share_of_episodes_in_alert": 0.55,
+     "events_by_category": {
+      "recorder": 2,
+      "camera": 2,
+      "timing": 7
+     }
+    },
+    "recorder_flag": {
+     "alert_events": 0,
+     "alert_events_per_100h": 0.0,
+     "share_of_episodes_in_alert": 0.0,
+     "events_by_category": {}
+    },
+    "model_101": {
+     "alert_events": 1,
+     "alert_events_per_100h": 27.05,
+     "share_of_episodes_in_alert": 0.01,
+     "events_by_category": {
+      "timing": 1
+     }
+    },
+    "model_202": {
+     "alert_events": 1,
+     "alert_events_per_100h": 27.05,
+     "share_of_episodes_in_alert": 0.01,
+     "events_by_category": {
+      "timing": 1
+     }
+    },
+    "model_303": {
+     "alert_events": 0,
+     "alert_events_per_100h": 0.0,
+     "share_of_episodes_in_alert": 0.0,
+     "events_by_category": {}
+    }
+   },
+   "proxy_4": {
+    "episodes": 60,
+    "hours": 0.89,
+    "rules": {
+     "alert_events": 0,
+     "alert_events_per_100h": 0.0,
+     "share_of_episodes_in_alert": 0.0,
+     "events_by_category": {}
+    },
+    "rules_per_episode": {
+     "alert_events": 5,
+     "alert_events_per_100h": 560.55,
+     "share_of_episodes_in_alert": 0.1,
+     "events_by_category": {
+      "recorder": 1,
+      "timing": 4
+     }
+    },
+    "robust_z": {
+     "alert_events": 3,
+     "alert_events_per_100h": 336.33,
+     "share_of_episodes_in_alert": 0.233,
+     "events_by_category": {
+      "timing": 3
+     }
+    },
+    "recorder_flag": {
+     "alert_events": 0,
+     "alert_events_per_100h": 0.0,
+     "share_of_episodes_in_alert": 0.0,
+     "events_by_category": {}
+    },
+    "model_101": {
+     "alert_events": 0,
+     "alert_events_per_100h": 0.0,
+     "share_of_episodes_in_alert": 0.0,
+     "events_by_category": {}
+    },
+    "model_202": {
+     "alert_events": 0,
+     "alert_events_per_100h": 0.0,
+     "share_of_episodes_in_alert": 0.0,
+     "events_by_category": {}
+    },
+    "model_303": {
+     "alert_events": 0,
+     "alert_events_per_100h": 0.0,
+     "share_of_episodes_in_alert": 0.0,
+     "events_by_category": {}
+    }
+   }
+  },
+  "day_agreement": {
+   "rules": {
+    "days": 71,
+    "both": 50,
+    "flag_only": 0,
+    "detector_only": 16,
+    "neither": 5,
+    "flag_days": 50
+   },
+   "rules_per_episode": {
+    "days": 71,
+    "both": 48,
+    "flag_only": 2,
+    "detector_only": 16,
+    "neither": 5,
+    "flag_days": 50
+   },
+   "robust_z": {
+    "days": 71,
+    "both": 41,
+    "flag_only": 9,
+    "detector_only": 20,
+    "neither": 1,
+    "flag_days": 50
+   },
+   "model_101": {
+    "days": 71,
+    "both": 13,
+    "flag_only": 37,
+    "detector_only": 7,
+    "neither": 14,
+    "flag_days": 50
+   },
+   "model_202": {
+    "days": 71,
+    "both": 15,
+    "flag_only": 35,
+    "detector_only": 7,
+    "neither": 14,
+    "flag_days": 50
+   },
+   "model_303": {
+    "days": 71,
+    "both": 15,
+    "flag_only": 35,
+    "detector_only": 12,
+    "neither": 9,
+    "flag_days": 50
+   }
+  }
+ },
+ "hflow": null
+}

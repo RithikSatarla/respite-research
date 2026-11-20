@@ -5,5 +5,6 @@
   "method": {"title": "Method | Respite research", "description": "Datasets, split, synthetic faults, detectors, training, thresholds and scoring for the Respite station-failure benchmark."},
   "reproduce": {"title": "Reproduce | Respite research", "description": "Published result files and hashes, commands, data sources and environment for the Respite station-failure benchmark."},
   "limitations": {"title": "Limitations | Respite research", "description": "What the Respite station-failure benchmark does and does not show."},
-  "report": {"title": "Technical report | Respite research", "description": "Respite: Detecting Recording-Station Failures in Robot Training Data. Full technical report."}
+  "report": {"title": "Technical report | Respite research", "description": "Respite: Detecting Recording-Station Failures in Robot Training Data. Full technical report."},
+  "contact": {"title": "Contact | Respite research", "description": "How to ask about a pilot, an evaluation or a number in the Respite station-failure benchmark."}
 }

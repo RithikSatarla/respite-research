@@ -1,10 +1,10 @@
 {
  "generated": "2026-11-20",
- "source_commit": "2a8fc62db1dd",
+ "source_commit": "bc245fbe2113",
  "files": [
   {
    "path": "data/results.json",
-   "sha256": "425b60713c666b62eebdb67359e2f66884b0b15ac6ab65b099e9f66fa5fbc3b3"
+   "sha256": "f3fdc3592dcf3d9d03e6c540435a79ea17722ead7c34210005c91a0908b60b83"
   },
   {
    "path": "data/demo.json",
@@ -44,7 +44,7 @@
   },
   {
    "path": "figures/hflow_episode_level.svg",
-   "sha256": "66584c070d68b34fc5e5a7d06e4a493b0e776059c1f411bad439fd4ed774fccb"
+   "sha256": "6a50f7246ad993f5fb191c6e5951267524eda9943ae96472117cd9d52b5aa6cc"
   },
   {
    "path": "figures/test_ablations.png",
@@ -52,7 +52,7 @@
   },
   {
    "path": "figures/test_ablations.svg",
-   "sha256": "9688919b478e70416df6a4d2be70a96236d5fb3b9171ea8f46abe44a419d46e5"
+   "sha256": "549533134d8f04f394ae9f839b0ea16f74ba2d7135caecc0997d2dd811d405b2"
   },
   {
    "path": "figures/test_by_fault.png",
@@ -60,7 +60,7 @@
   },
   {
    "path": "figures/test_by_fault.svg",
-   "sha256": "4419d26012cfdab75ba17f9fce52b424bf9b990ccd65fbc382fbb560a9fe6723"
+   "sha256": "20bc7cf62bedb3157cead3cfe94e15564136d31eefe862c75a575160552cedd0"
   },
   {
    "path": "figures/test_calibration.png",
@@ -68,7 +68,7 @@
   },
   {
    "path": "figures/test_calibration.svg",
-   "sha256": "3250ec65f41bd40a22bd7e410971203766d4a7644f769803757965defcee1a35"
+   "sha256": "78b57b47dc9613fdf1d1dd951b6cfb35daaa1b72701e97eaf3bb2f2b52fa4f3a"
   },
   {
    "path": "figures/test_recall_vs_alert_rate.png",
@@ -76,7 +76,7 @@
   },
   {
    "path": "figures/test_recall_vs_alert_rate.svg",
-   "sha256": "cd36d89f85b236b3966e426f213241c3607c79f5be9302daeacf2b81845c2776"
+   "sha256": "5af78bb57ef0428504ac553160fd880bc13a7c4f2687ae938ec4bd9413710fc6"
   }
  ]
 }

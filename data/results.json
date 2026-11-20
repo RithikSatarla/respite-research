@@ -1,7 +1,7 @@
 {
  "meta": {
   "generated": "2026-11-20",
-  "source_commit": "2a8fc62db1dd",
+  "source_commit": "bc245fbe2113",
   "protocol": "experiments/PROTOCOL.md (frozen; amendments listed there)",
   "python": "3.11.1",
   "sklearn": "1.9.1"

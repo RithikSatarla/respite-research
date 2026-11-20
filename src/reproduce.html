@@ -10,13 +10,14 @@
 <li><a href="data/results.json">data/results.json</a>: every number on this site.</li>
 <li><a href="data/tables/trials.csv">data/tables/trials.csv</a>: every scored test trial for every detector (one row per trial; XDOF episode identifiers are public).</li>
 <li><a href="data/tables/by_fault.csv">by_fault.csv</a>, <a href="data/tables/by_station.csv">by_station.csv</a>, <a href="data/tables/ablations.csv">ablations.csv</a>, <a href="data/tables/curves.csv">curves.csv</a>, <a href="data/tables/calibration.csv">calibration.csv</a>.</li>
+<li><a href="data/tables/hflow_per_episode.csv">data/tables/hflow_per_episode.csv</a>: the HFlow comparison, one row per file, with both scorings.</li>
 <li><a href="data/demo.json">data/demo.json</a>: the stored records behind the interactive demo.</li>
 <li><a href="data/MANIFEST.json">data/MANIFEST.json</a>: SHA-256 of every published data file and figure, and the source commit ({{ meta.source_commit }}).</li>
 </ul>
 <p>Development-set results (the team dataset) are published only as aggregates: the dataset's licence is not recorded and its owner is not named.</p>
 
 <h2>Run it (with repository access)</h2>
-<pre><code># Python 3.11 or 3.12
+<pre><code># Python 3.11 or 3.12 (the study used Python 3.11.1 with scikit-learn 1.9.1)
 pip install -e ".[readers]" scikit-learn pytest mcap mcap-protobuf-support
 python -m pytest tests                      # the whole suite, including the benchmark tests
 
@@ -38,8 +39,10 @@ python experiments/benchmark.py --set test
 python experiments/decide.py
 python experiments/retrospective.py
 python experiments/figures.py
+python experiments/check_model_versions.py  # same model probabilities under each scikit-learn version
 
-# HFlow comparison (HFlow 0.2.22 from PyPI, run under WSL2 or Linux)
+# HFlow comparison (HFlow 0.2.22 from PyPI, run under WSL2 or Linux). HFlow keeps a transformed copy of
+# every file it tests in its data root (the third argument): put it on a drive with several GB free.
 python experiments/hflow/make_hflow_set.py --data data/xdof --out OUT/hflow_set
 python experiments/hflow/run_hflow.py OUT/hflow_set/files.json OUT/hflow_set/hflow_out.jsonl /tmp/hflow_runs
 python experiments/hflow/compare.py --set OUT/hflow_set</code></pre>
@@ -52,5 +55,5 @@ python experiments/hflow/compare.py --set OUT/hflow_set</code></pre>
 </ul>
 
 <h2>Environment used</h2>
-<p>{{ training.processor }}, {{ training.hardware }}. Python {{ meta.python }}, scikit-learn {{ meta.sklearn }}. Measuring one test episode took a median of {{ test.cost.measurement.seconds_median | f2 }} s; one detector update took a median of {{ test.cost.median_update_s.model_101 | f4 }} s for the model and {{ test.cost.median_update_s.rules | f4 }} s for the rules.</p>
+<p>{{ training.processor }}, {{ training.hardware }}. Python {{ meta.python }}, scikit-learn {{ meta.sklearn }}. The frozen models give the same probabilities on all {{ model_versions.0.episodes | int }} test episodes under scikit-learn {{ model_versions.1.sklearn }} as well. Measuring one test episode took a median of {{ test.cost.measurement.seconds_median | f2 }} s; one detector update took a median of {{ test.cost.median_update_s.model_101 | f4 }} s for the model and {{ test.cost.median_update_s.rules | f4 }} s for the rules.</p>
 </div>

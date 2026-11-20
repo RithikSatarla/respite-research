@@ -1,10 +1,10 @@
 {
  "generated": "2026-11-20",
- "source_commit": "fe0be8baa93e",
+ "source_commit": "2a8fc62db1dd",
  "files": [
   {
    "path": "data/results.json",
-   "sha256": "919c091e4b810dc8d5113fdc2c105655488b098e37143c8ac1ce4d14533caadf"
+   "sha256": "425b60713c666b62eebdb67359e2f66884b0b15ac6ab65b099e9f66fa5fbc3b3"
   },
   {
    "path": "data/demo.json",
@@ -33,6 +33,18 @@
   {
    "path": "data/tables/trials.csv",
    "sha256": "c9c78cdccc798a9e0857acef6981a1f3207d166be8be74f1eb053e02ef1281f1"
+  },
+  {
+   "path": "data/tables/hflow_per_episode.csv",
+   "sha256": "61a5b4a9d05244ef5d4ee7271fc698a71f8ac2ce31ae6afe18021469638d54c4"
+  },
+  {
+   "path": "figures/hflow_episode_level.png",
+   "sha256": "efdf8586a4c66b389630feda8d0190e961dbb8ed5a5bf822ae83ce32ed685f89"
+  },
+  {
+   "path": "figures/hflow_episode_level.svg",
+   "sha256": "66584c070d68b34fc5e5a7d06e4a493b0e776059c1f411bad439fd4ed774fccb"
   },
   {
    "path": "figures/test_ablations.png",

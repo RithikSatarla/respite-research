@@ -71,6 +71,7 @@ SOURCES = [  # results.json prefix -> stored file in Respite's repository it was
     ("training", "experiments/results/thresholds.json"), ("retrospective", "experiments/results/retrospective/summary.json"),
     ("hflow", "experiments/results/hflow/summary.json"), ("dev_reference", "experiments/results/dev_101/summary.json"),
     ("data", "experiments/splits/split_v1.json and experiments/results/test/summary.json"), ("meta", "export_site.py run"),
+    ("model_versions", "experiments/results/model_version_check/*.json (experiments/check_model_versions.py)"),
 ]
 CLAIMS = []
 

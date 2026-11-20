@@ -33,6 +33,7 @@
 <div class="prose">
 <p><strong>A trained model is not reliably better than the rules.</strong> By the rule fixed before the test run, one of its three training seeds beat the shipped rules and two did worse (<a href="benchmark.html#decision">details</a>). We recommend not shipping it.</p>
 <p><strong>More measurements help more than learning.</strong> The robust baseline uses measurements the rules do not read, and caught {{ test.point.robust_z.recall | pct0 }} of faults against {{ test.point.rules.recall | pct0 }}, earlier in {{ test.paired_delay.robust_z_vs_rules.detector_faster | int }} of {{ test.paired_delay.robust_z_vs_rules.n | int }} faults both caught. It raises more alerts on untouched recordings, and it cannot see a station that was broken from its first episode; the rules can. The two belong side by side.</p>
+<p><strong>Against HFlow, the clearest difference is one measurement.</strong> On {{ hflow.n_original | int }} episodes run through both tools, HFlow's measurements caught recorder pauses and missing streams as well as Respite's, and caught recorder-rate drops better at low flag rates. They caught command-to-motion delays no more often than chance; Respite's caught {{ hflow.amended_tools.respite.matched_rate_sweep.2.recall.timing_delay | pct0 }}. This is exploratory, because the scoring was corrected after the results were seen (<a href="benchmark.html#hflow">details</a>).</p>
 </div>
 
 <h2>How the test was set up</h2>

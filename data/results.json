@@ -1,7 +1,7 @@
 {
  "meta": {
   "generated": "2026-11-20",
-  "source_commit": "fe0be8baa93e",
+  "source_commit": "2a8fc62db1dd",
   "protocol": "experiments/PROTOCOL.md (frozen; amendments listed there)",
   "python": "3.11.1",
   "sklearn": "1.9.1"
@@ -561,9 +561,9 @@
      "n": 20.0,
      "detected": 0.0,
      "recall": 0.0,
-     "median_delay_min": NaN,
-     "strict_category": NaN,
-     "subsystem_category": NaN,
+     "median_delay_min": "nan",
+     "strict_category": "nan",
+     "subsystem_category": "nan",
      "insufficient": 0.0,
      "masked": 0.0
     },
@@ -573,9 +573,9 @@
      "n": 20.0,
      "detected": 0.0,
      "recall": 0.0,
-     "median_delay_min": NaN,
-     "strict_category": NaN,
-     "subsystem_category": NaN,
+     "median_delay_min": "nan",
+     "strict_category": "nan",
+     "subsystem_category": "nan",
      "insufficient": 0.0,
      "masked": 0.0
     },
@@ -585,9 +585,9 @@
      "n": 20.0,
      "detected": 0.0,
      "recall": 0.0,
-     "median_delay_min": NaN,
-     "strict_category": NaN,
-     "subsystem_category": NaN,
+     "median_delay_min": "nan",
+     "strict_category": "nan",
+     "subsystem_category": "nan",
      "insufficient": 0.0,
      "masked": 0.0
     },
@@ -609,9 +609,9 @@
      "n": 20.0,
      "detected": 0.0,
      "recall": 0.0,
-     "median_delay_min": NaN,
-     "strict_category": NaN,
-     "subsystem_category": NaN,
+     "median_delay_min": "nan",
+     "strict_category": "nan",
+     "subsystem_category": "nan",
      "insufficient": 0.0,
      "masked": 0.0
     },
@@ -855,9 +855,9 @@
      "n": 20.0,
      "detected": 0.0,
      "recall": 0.0,
-     "median_delay_min": NaN,
-     "strict_category": NaN,
-     "subsystem_category": NaN,
+     "median_delay_min": "nan",
+     "strict_category": "nan",
+     "subsystem_category": "nan",
      "insufficient": 0.0,
      "masked": 0.0
     },
@@ -879,9 +879,9 @@
      "n": 20.0,
      "detected": 0.0,
      "recall": 0.0,
-     "median_delay_min": NaN,
-     "strict_category": NaN,
-     "subsystem_category": NaN,
+     "median_delay_min": "nan",
+     "strict_category": "nan",
+     "subsystem_category": "nan",
      "insufficient": 0.0,
      "masked": 0.0
     },
@@ -891,9 +891,9 @@
      "n": 20.0,
      "detected": 0.0,
      "recall": 0.0,
-     "median_delay_min": NaN,
-     "strict_category": NaN,
-     "subsystem_category": NaN,
+     "median_delay_min": "nan",
+     "strict_category": "nan",
+     "subsystem_category": "nan",
      "insufficient": 0.0,
      "masked": 0.0
     },
@@ -903,9 +903,9 @@
      "n": 20.0,
      "detected": 0.0,
      "recall": 0.0,
-     "median_delay_min": NaN,
-     "strict_category": NaN,
-     "subsystem_category": NaN,
+     "median_delay_min": "nan",
+     "strict_category": "nan",
+     "subsystem_category": "nan",
      "insufficient": 0.0,
      "masked": 0.0
     },
@@ -953,9 +953,9 @@
      "n": 20.0,
      "detected": 0.0,
      "recall": 0.0,
-     "median_delay_min": NaN,
-     "strict_category": NaN,
-     "subsystem_category": NaN,
+     "median_delay_min": "nan",
+     "strict_category": "nan",
+     "subsystem_category": "nan",
      "insufficient": 0.0,
      "masked": 0.0
     },
@@ -989,9 +989,9 @@
      "n": 20.0,
      "detected": 0.0,
      "recall": 0.0,
-     "median_delay_min": NaN,
-     "strict_category": NaN,
-     "subsystem_category": NaN,
+     "median_delay_min": "nan",
+     "strict_category": "nan",
+     "subsystem_category": "nan",
      "insufficient": 0.0,
      "masked": 0.0
     },
@@ -1001,9 +1001,9 @@
      "n": 20.0,
      "detected": 0.0,
      "recall": 0.0,
-     "median_delay_min": NaN,
-     "strict_category": NaN,
-     "subsystem_category": NaN,
+     "median_delay_min": "nan",
+     "strict_category": "nan",
+     "subsystem_category": "nan",
      "insufficient": 0.0,
      "masked": 0.0
     },
@@ -1051,9 +1051,9 @@
      "n": 20.0,
      "detected": 0.0,
      "recall": 0.0,
-     "median_delay_min": NaN,
-     "strict_category": NaN,
-     "subsystem_category": NaN,
+     "median_delay_min": "nan",
+     "strict_category": "nan",
+     "subsystem_category": "nan",
      "insufficient": 0.0,
      "masked": 0.0
     },
@@ -1075,9 +1075,9 @@
      "n": 20.0,
      "detected": 0.0,
      "recall": 0.0,
-     "median_delay_min": NaN,
-     "strict_category": NaN,
-     "subsystem_category": NaN,
+     "median_delay_min": "nan",
+     "strict_category": "nan",
+     "subsystem_category": "nan",
      "insufficient": 0.0,
      "masked": 0.0
     },
@@ -1087,9 +1087,9 @@
      "n": 20.0,
      "detected": 0.0,
      "recall": 0.0,
-     "median_delay_min": NaN,
-     "strict_category": NaN,
-     "subsystem_category": NaN,
+     "median_delay_min": "nan",
+     "strict_category": "nan",
+     "subsystem_category": "nan",
      "insufficient": 0.0,
      "masked": 0.0
     },
@@ -1099,9 +1099,9 @@
      "n": 20.0,
      "detected": 0.0,
      "recall": 0.0,
-     "median_delay_min": NaN,
-     "strict_category": NaN,
-     "subsystem_category": NaN,
+     "median_delay_min": "nan",
+     "strict_category": "nan",
+     "subsystem_category": "nan",
      "insufficient": 0.0,
      "masked": 0.0
     },
@@ -1111,9 +1111,9 @@
      "n": 20.0,
      "detected": 0.0,
      "recall": 0.0,
-     "median_delay_min": NaN,
-     "strict_category": NaN,
-     "subsystem_category": NaN,
+     "median_delay_min": "nan",
+     "strict_category": "nan",
+     "subsystem_category": "nan",
      "insufficient": 0.0,
      "masked": 0.0
     },
@@ -2354,5 +2354,458 @@
    }
   }
  },
- "hflow": null
+ "hflow": {
+  "n_original": 30,
+  "faults": [
+   "missing",
+   "recorder_pause",
+   "recorder_rate",
+   "sync_drift",
+   "timing_delay"
+  ],
+  "decision": "any |z| > 1.645 against the 30 originals (leave one out)",
+  "tools": {
+   "respite": {
+    "flag_rate_originals_doc_z": 0.3,
+    "flag_rate_originals_fixed": 0.03333333333333333,
+    "originals_infinite_z": 0,
+    "recall_doc_z": {
+     "missing": 1.0,
+     "recorder_pause": 1.0,
+     "recorder_rate": 1.0,
+     "sync_drift": 1.0,
+     "timing_delay": 1.0
+    },
+    "recall_fixed": {
+     "missing": 0.5666666666666667,
+     "recorder_pause": 0.03333333333333333,
+     "recorder_rate": 0.26666666666666666,
+     "sync_drift": 0.03333333333333333,
+     "timing_delay": 0.03333333333333333
+    },
+    "failed_files": 0,
+    "median_seconds_per_file": 0.6032927999913227,
+    "matched_rate_sweep": [
+     {
+      "originals_flagged": 0,
+      "threshold": 32.445772590125394,
+      "originals_flagged_actual": 0,
+      "originals_flagged_share": 0.0,
+      "recall": {
+       "missing": 1.0,
+       "recorder_pause": 1.0,
+       "recorder_rate": 0.03333333333333333,
+       "sync_drift": 0.0,
+       "timing_delay": 0.0
+      }
+     },
+     {
+      "originals_flagged": 1,
+      "threshold": 9.080912305086763,
+      "originals_flagged_actual": 1,
+      "originals_flagged_share": 0.03333333333333333,
+      "recall": {
+       "missing": 1.0,
+       "recorder_pause": 1.0,
+       "recorder_rate": 0.03333333333333333,
+       "sync_drift": 0.26666666666666666,
+       "timing_delay": 0.4666666666666667
+      }
+     },
+     {
+      "originals_flagged": 2,
+      "threshold": 3.6423892535204523,
+      "originals_flagged_actual": 2,
+      "originals_flagged_share": 0.06666666666666667,
+      "recall": {
+       "missing": 1.0,
+       "recorder_pause": 1.0,
+       "recorder_rate": 0.1,
+       "sync_drift": 0.8,
+       "timing_delay": 0.9333333333333333
+      }
+     },
+     {
+      "originals_flagged": 3,
+      "threshold": 2.5659695477160054,
+      "originals_flagged_actual": 3,
+      "originals_flagged_share": 0.1,
+      "recall": {
+       "missing": 1.0,
+       "recorder_pause": 1.0,
+       "recorder_rate": 0.4,
+       "sync_drift": 0.8666666666666667,
+       "timing_delay": 0.9666666666666667
+      }
+     },
+     {
+      "originals_flagged": 6,
+      "threshold": 2.1779236901054455,
+      "originals_flagged_actual": 6,
+      "originals_flagged_share": 0.2,
+      "recall": {
+       "missing": 1.0,
+       "recorder_pause": 1.0,
+       "recorder_rate": 1.0,
+       "sync_drift": 0.9333333333333333,
+       "timing_delay": 1.0
+      }
+     }
+    ],
+    "missing_by_stream": {
+     "action": {
+      "n": 16,
+      "fixed_flagged": 16
+     },
+     "camera": {
+      "n": 14,
+      "fixed_flagged": 1
+     }
+    },
+    "top_measurement_originals": {
+     "delay_ms": 9,
+     "max_gap_s": 6,
+     "row_minus_dispatch_ms": 6,
+     "cam_offset_max_s": 3,
+     "cam_rate_ratio_min": 3
+    }
+   },
+   "hflow": {
+    "flag_rate_originals_doc_z": 1.0,
+    "flag_rate_originals_fixed": 0.0,
+    "originals_infinite_z": 30,
+    "recall_doc_z": {
+     "missing": 1.0,
+     "recorder_pause": 1.0,
+     "recorder_rate": 1.0,
+     "sync_drift": 1.0,
+     "timing_delay": 1.0
+    },
+    "recall_fixed": {
+     "missing": 1.0,
+     "recorder_pause": 0.0,
+     "recorder_rate": 0.0,
+     "sync_drift": 0.0,
+     "timing_delay": 0.0
+    },
+    "failed_files": 0,
+    "median_seconds_per_file": 21.411,
+    "matched_rate_sweep": [
+     {
+      "originals_flagged": 0,
+      "threshold": "inf",
+      "originals_flagged_actual": 0,
+      "originals_flagged_share": 0.0,
+      "recall": {
+       "missing": 0.0,
+       "recorder_pause": 0.0,
+       "recorder_rate": 0.0,
+       "sync_drift": 0.0,
+       "timing_delay": 0.0
+      }
+     },
+     {
+      "originals_flagged": 1,
+      "threshold": "inf",
+      "originals_flagged_actual": 0,
+      "originals_flagged_share": 0.0,
+      "recall": {
+       "missing": 0.0,
+       "recorder_pause": 0.0,
+       "recorder_rate": 0.0,
+       "sync_drift": 0.0,
+       "timing_delay": 0.0
+      }
+     },
+     {
+      "originals_flagged": 2,
+      "threshold": "inf",
+      "originals_flagged_actual": 0,
+      "originals_flagged_share": 0.0,
+      "recall": {
+       "missing": 0.0,
+       "recorder_pause": 0.0,
+       "recorder_rate": 0.0,
+       "sync_drift": 0.0,
+       "timing_delay": 0.0
+      }
+     },
+     {
+      "originals_flagged": 3,
+      "threshold": "inf",
+      "originals_flagged_actual": 0,
+      "originals_flagged_share": 0.0,
+      "recall": {
+       "missing": 0.0,
+       "recorder_pause": 0.0,
+       "recorder_rate": 0.0,
+       "sync_drift": 0.0,
+       "timing_delay": 0.0
+      }
+     },
+     {
+      "originals_flagged": 6,
+      "threshold": "inf",
+      "originals_flagged_actual": 0,
+      "originals_flagged_share": 0.0,
+      "recall": {
+       "missing": 0.0,
+       "recorder_pause": 0.0,
+       "recorder_rate": 0.0,
+       "sync_drift": 0.0,
+       "timing_delay": 0.0
+      }
+     }
+    ],
+    "missing_by_stream": {
+     "action": {
+      "n": 16,
+      "fixed_flagged": 16
+     },
+     "camera": {
+      "n": 14,
+      "fixed_flagged": 14
+     }
+    },
+    "top_measurement_originals": {
+     "timestamp_regularity_30hz:interval_count": 21,
+     "timestamp_regularity_30hz:sync//left-wrist-camera~/right-arm-state/end_offset_s": 7,
+     "timestamp_regularity_30hz:sync//left-wrist-camera~/left-arm-action/end_offset_s": 2
+    }
+   }
+  },
+  "amended_tools": {
+   "respite": {
+    "flag_rate_originals_doc_z": 0.3,
+    "flag_rate_originals_fixed": 0.03333333333333333,
+    "originals_infinite_z": 0,
+    "recall_doc_z": {
+     "missing": 1.0,
+     "recorder_pause": 1.0,
+     "recorder_rate": 1.0,
+     "sync_drift": 1.0,
+     "timing_delay": 1.0
+    },
+    "recall_fixed": {
+     "missing": 0.5666666666666667,
+     "recorder_pause": 0.03333333333333333,
+     "recorder_rate": 0.26666666666666666,
+     "sync_drift": 0.03333333333333333,
+     "timing_delay": 0.03333333333333333
+    },
+    "failed_files": 0,
+    "median_seconds_per_file": 0.6032927999913227,
+    "matched_rate_sweep": [
+     {
+      "originals_flagged": 0,
+      "threshold": 32.445772590125394,
+      "originals_flagged_actual": 0,
+      "originals_flagged_share": 0.0,
+      "recall": {
+       "missing": 1.0,
+       "recorder_pause": 1.0,
+       "recorder_rate": 0.03333333333333333,
+       "sync_drift": 0.0,
+       "timing_delay": 0.0
+      }
+     },
+     {
+      "originals_flagged": 1,
+      "threshold": 9.080912305086763,
+      "originals_flagged_actual": 1,
+      "originals_flagged_share": 0.03333333333333333,
+      "recall": {
+       "missing": 1.0,
+       "recorder_pause": 1.0,
+       "recorder_rate": 0.03333333333333333,
+       "sync_drift": 0.26666666666666666,
+       "timing_delay": 0.4666666666666667
+      }
+     },
+     {
+      "originals_flagged": 2,
+      "threshold": 3.6423892535204523,
+      "originals_flagged_actual": 2,
+      "originals_flagged_share": 0.06666666666666667,
+      "recall": {
+       "missing": 1.0,
+       "recorder_pause": 1.0,
+       "recorder_rate": 0.1,
+       "sync_drift": 0.8,
+       "timing_delay": 0.9333333333333333
+      }
+     },
+     {
+      "originals_flagged": 3,
+      "threshold": 2.5659695477160054,
+      "originals_flagged_actual": 3,
+      "originals_flagged_share": 0.1,
+      "recall": {
+       "missing": 1.0,
+       "recorder_pause": 1.0,
+       "recorder_rate": 0.4,
+       "sync_drift": 0.8666666666666667,
+       "timing_delay": 0.9666666666666667
+      }
+     },
+     {
+      "originals_flagged": 6,
+      "threshold": 2.1779236901054455,
+      "originals_flagged_actual": 6,
+      "originals_flagged_share": 0.2,
+      "recall": {
+       "missing": 1.0,
+       "recorder_pause": 1.0,
+       "recorder_rate": 1.0,
+       "sync_drift": 0.9333333333333333,
+       "timing_delay": 1.0
+      }
+     }
+    ],
+    "missing_by_stream": {
+     "action": {
+      "n": 16,
+      "fixed_flagged": 16
+     },
+     "camera": {
+      "n": 14,
+      "fixed_flagged": 1
+     }
+    },
+    "top_measurement_originals": {
+     "delay_ms": 9,
+     "max_gap_s": 6,
+     "row_minus_dispatch_ms": 6,
+     "cam_offset_max_s": 3,
+     "cam_rate_ratio_min": 3
+    }
+   },
+   "hflow": {
+    "flag_rate_originals_doc_z": 0.4666666666666667,
+    "flag_rate_originals_fixed": 0.0,
+    "originals_infinite_z": 0,
+    "recall_doc_z": {
+     "missing": 1.0,
+     "recorder_pause": 1.0,
+     "recorder_rate": 0.8333333333333334,
+     "sync_drift": 1.0,
+     "timing_delay": 0.4666666666666667
+    },
+    "recall_fixed": {
+     "missing": 1.0,
+     "recorder_pause": 0.0,
+     "recorder_rate": 0.0,
+     "sync_drift": 0.0,
+     "timing_delay": 0.0
+    },
+    "failed_files": 0,
+    "median_seconds_per_file": 21.411,
+    "matched_rate_sweep": [
+     {
+      "originals_flagged": 0,
+      "threshold": 231.4998320606183,
+      "originals_flagged_actual": 0,
+      "originals_flagged_share": 0.0,
+      "recall": {
+       "missing": 1.0,
+       "recorder_pause": 0.0,
+       "recorder_rate": 0.0,
+       "sync_drift": 0.0,
+       "timing_delay": 0.0
+      }
+     },
+     {
+      "originals_flagged": 1,
+      "threshold": 14.252271387178153,
+      "originals_flagged_actual": 1,
+      "originals_flagged_share": 0.03333333333333333,
+      "recall": {
+       "missing": 1.0,
+       "recorder_pause": 1.0,
+       "recorder_rate": 0.3,
+       "sync_drift": 0.06666666666666667,
+       "timing_delay": 0.0
+      }
+     },
+     {
+      "originals_flagged": 2,
+      "threshold": 11.813565135538466,
+      "originals_flagged_actual": 2,
+      "originals_flagged_share": 0.06666666666666667,
+      "recall": {
+       "missing": 1.0,
+       "recorder_pause": 1.0,
+       "recorder_rate": 0.3,
+       "sync_drift": 0.26666666666666666,
+       "timing_delay": 0.0
+      }
+     },
+     {
+      "originals_flagged": 3,
+      "threshold": 3.06465597750191,
+      "originals_flagged_actual": 3,
+      "originals_flagged_share": 0.1,
+      "recall": {
+       "missing": 1.0,
+       "recorder_pause": 1.0,
+       "recorder_rate": 0.5333333333333333,
+       "sync_drift": 0.9666666666666667,
+       "timing_delay": 0.1
+      }
+     },
+     {
+      "originals_flagged": 6,
+      "threshold": 2.4518059381270776,
+      "originals_flagged_actual": 6,
+      "originals_flagged_share": 0.2,
+      "recall": {
+       "missing": 1.0,
+       "recorder_pause": 1.0,
+       "recorder_rate": 0.8,
+       "sync_drift": 0.9666666666666667,
+       "timing_delay": 0.2
+      }
+     }
+    ],
+    "missing_by_stream": {
+     "action": {
+      "n": 16,
+      "fixed_flagged": 16
+     },
+     "camera": {
+      "n": 14,
+      "fixed_flagged": 14
+     }
+    },
+    "top_measurement_originals": {
+     "required_topics_normal_set:/right-arm-action/message_count": 5,
+     "camera_fps_conformance_30:/top-camera/median_frame_interval_ns": 3,
+     "timestamp_regularity_30hz:sync//left-wrist-camera~reference/end_offset_s": 3,
+     "episode_duration:topic_count": 2,
+     "timestamp_regularity_30hz:/right-arm-action/max_gap_s": 2
+    }
+   }
+  },
+  "amendment": "experiments/PROTOCOL.md amendment 4 (after HFlow results were seen): one name per camera for HFlow's offsets; absent measurement infinite only if 90% of references carry it"
+ },
+ "model_versions": [
+  {
+   "python": "3.11.1",
+   "sklearn": "1.9.1",
+   "numpy": "2.4.6",
+   "model_101_sha256_16": "30d6c9375e396e90",
+   "model_202_sha256_16": "3a40dac3e057593c",
+   "model_303_sha256_16": "d248218d53c4c345",
+   "episodes": 2800
+  },
+  {
+   "python": "3.14.3",
+   "sklearn": "1.8.0",
+   "numpy": "2.4.4",
+   "model_101_sha256_16": "30d6c9375e396e90",
+   "model_202_sha256_16": "3a40dac3e057593c",
+   "model_303_sha256_16": "d248218d53c4c345",
+   "episodes": 2800
+  }
+ ]
 }

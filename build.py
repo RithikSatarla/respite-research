@@ -17,9 +17,9 @@ import sys
 ROOT = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(ROOT, "_site")
 TOKEN = re.compile(r"\{\{\s*([A-Za-z0-9_.\-\[\]]+)\s*(?:\|\s*([a-z_0-9]+))?\s*\}\}")
-PAGES = ["index", "benchmark", "demo", "method", "reproduce", "limitations", "report"]
+PAGES = ["index", "benchmark", "demo", "method", "reproduce", "limitations", "report", "contact"]
 NAV = [("index", "Overview"), ("benchmark", "Benchmark"), ("demo", "Demo"), ("method", "Method"),
-       ("reproduce", "Reproduce"), ("limitations", "Limitations"), ("report", "Report")]
+       ("reproduce", "Reproduce"), ("limitations", "Limitations"), ("report", "Report"), ("contact", "Contact")]
 BASE_URL = "https://rithiksatarla.github.io/respite-research/"
 
 
